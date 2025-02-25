@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Year Progress Tracker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #3a539b;
+            text-align: center;
+        }
+        h3 {
+            color: #3a539b;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .progress-container {
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            margin: 20px 0;
+            height: 30px;
+        }
+        .progress-bar {
+            height: 100%;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 0.5s ease;
+        }
+        .progress-bar-green {
+            background: linear-gradient(to right, #4CAF50, #8BC34A);
+        }
+        .progress-bar-pink {
+            background: linear-gradient(to right, #FF69B4, #FFC0CB);
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stat-box {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3a539b;
+        }
+        .events-container {
+            display: flex;
+            gap: 20px;
+        }
+        .events-column {
+            flex: 1;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .past-event {
+            color: #9e9e9e;
+            text-decoration: line-through;
+        }
+        .upcoming-event {
+            font-weight: bold;
+            color: #3a539b;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lynn Public Schools</h1>
+        <h2>2024-2025 School Year Progress</h2>
+        
+        <h3>All School Days (Including Half Days)</h3>
+        <div class="stats">
+            <div class="stat-box">
+                <div>Days Completed</div>
+                <div class="stat-number" id="days-completed">0</div>
+            </div>
+            <div class="stat-box">
+                <div>Total School Days</div>
+                <div class="stat-number" id="total-days">0</div>
+            </div>
+            <div class="stat-box">
+                <div>Days Remaining</div>
+                <div class="stat-number" id="days-remaining">0</div>
+            </div>
+        </div>
+        
+        <div>
+            <div id="percentage-text">0% Complete</div>
+            <div class="progress-container">
+                <div class="progress-bar progress-bar-green" id="progress-bar">0%</div>
+            </div>
+        </div>
+        
+        <h3>Full School Days Only</h3>
+        <div class="stats">
+            <div class="stat-box">
+                <div>Full Days Completed</div>
+                <div class="stat-number" id="full-days-completed">0</div>
+            </div>
+            <div class="stat-box">
+                <div>Total Full Days</div>
+                <div class="stat-number" id="total-full-days">0</div>
+            </div>
+            <div class="stat-box">
+                <div>Full Days Remaining</div>
+                <div class="stat-number" id="full-days-remaining">0</div>
+            </div>
+        </div>
+        
+        <div>
+            <div id="full-percentage-text">0% Complete</div>
+            <div class="progress-container">
+                <div class="progress-bar progress-bar-pink" id="full-progress-bar">0%</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="events-container">
+            <div class="events-column">
+                <h3>Past Events</h3>
+                <div id="past-events"></div>
+            </div>
+            <div class="events-column">
+                <h3>Upcoming Events</h3>
+                <div id="upcoming-events"></div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Data based on Lynn Public Schools 2024-2025 Calendar</p>
+        <p id="last-updated"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Calendar data based exactly on the PDF
+            const schoolData = {
+                firstDay: new Date(2024, 8, 4), // Sept 4, 2024 (first school day for grades 1-11)
+                lastDay: new Date(2025, 5, 20), // June 20, 2025
+                
+                // Days per month (from calendar)
+                monthDays: {
+                    // [month index, days]
+                    8: 19,  // September (0-indexed, so 8 = September)
+                    9: 22,  // October
+                    10: 17, // November
+                    11: 15, // December
+                    0: 20,  // January
+                    1: 15,  // February
+                    2: 21,  // March
+                    3: 16,  // April
+                    4: 21,  // May
+                    5: 14   // June
+                },
+                
+                // Events from the PDF
+                events: [
+                    // Teacher in-service days
+                    { date: new Date(2024, 7, 28), name: "Teacher In-Service Day (No School)", type: "no_school" },
+                    { date: new Date(2024, 7, 29), name: "Teacher In-Service Day (No School)", type: "no_school" },
+                    { date: new Date(2024, 8, 3), name: "Teacher In-Service Day (No School)", type: "no_school" },
+                    { date: new Date(2024, 10, 5), name: "Teacher In-Service Day (No School)", type: "no_school" },
+                    { date: new Date(2025, 0, 17), name: "Teacher In-Service Day (No School)", type: "no_school" },
+                    
+                    // Early release days (marked in calendar)
+                    { date: new Date(2024, 8, 20), name: "Early Release Day", type: "half_day" },
+                    { date: new Date(2024, 9, 25), name: "Early Release Day", type: "half_day" },
+                    { date: new Date(2024, 10, 20), name: "Early Release Day", type: "half_day" },
+                    { date: new Date(2024, 11, 11), name: "Early Release Day", type: "half_day" },
+                    { date: new Date(2025, 0, 8), name: "Early Release Day", type: "half_day" },
+                    { date: new Date(2025, 1, 12), name: "Early Release Day", type: "half_day" },
+                    { date: new Date(2025, 2, 26), name: "Early Release Day", type: "half_day" },
+                    { date: new Date(2025, 3, 9), name: "Early Release Day", type: "half_day" },
+                    { date: new Date(2025, 4, 14), name: "Early Release Day", type: "half_day" },
+                    
+                    // School closed days (from calendar)
+                    { date: new Date(2024, 8, 2), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 9, 14), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 10, 11), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 10, 27), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 10, 28), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 10, 29), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 11, 23), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 11, 24), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 11, 25), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 11, 26), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 11, 27), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 11, 30), name: "School Closed", type: "holiday" },
+                    { date: new Date(2024, 11, 31), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 0, 1), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 0, 2), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 0, 3), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 0, 20), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 1, 17), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 1, 18), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 1, 19), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 1, 20), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 1, 21), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 3, 18), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 3, 19), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 3, 20), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 3, 21), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 3, 22), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 3, 23), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 3, 24), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 3, 25), name: "School Closed", type: "holiday" },
+                    { date: new Date(2025, 4, 26), name: "School Closed", type: "holiday" },
+                    
+                    // Special events
+                    { date: new Date(2025, 5, 5), name: "High School Graduation", type: "special" },
+                    { date: new Date(2025, 5, 6), name: "High School Graduation", type: "special" },
+                    { date: new Date(2025, 5, 20), name: "Last Day of School", type: "special" },
+                    
+                    // Report card dates
+                    { date: new Date(2024, 9, 11), name: "Quarter 1 IPRs Distribution", type: "report" },
+                    { date: new Date(2024, 10, 1), name: "Trimester 1 IPRs Distribution", type: "report" },
+                    { date: new Date(2024, 10, 19), name: "Quarter 1 Report Cards", type: "report" },
+                    { date: new Date(2024, 11, 18), name: "Trimester 1 Report Cards", type: "report" },
+                    { date: new Date(2024, 11, 20), name: "Quarter 2 IPRs Distribution", type: "report" },
+                    { date: new Date(2025, 0, 31), name: "Quarter 2 Report Cards", type: "report" },
+                    { date: new Date(2025, 1, 7), name: "Trimester 2 IPRs Distribution", type: "report" },
+                    { date: new Date(2025, 2, 14), name: "Quarter 3 IPRs Distribution", type: "report" },
+                    { date: new Date(2025, 3, 2), name: "Trimester 2 Report Cards", type: "report" },
+                    { date: new Date(2025, 3, 11), name: "Quarter 3 Report Cards", type: "report" },
+                    { date: new Date(2025, 4, 16), name: "Trimester 3 IPRs Distribution", type: "report" },
+                    { date: new Date(2025, 4, 23), name: "Quarter 4 IPRs Distribution", type: "report" },
+                    { date: new Date(2025, 5, 20), name: "Final Report Cards", type: "report" }
+                ]
+            };
+
+            function calculateProgress() {
+                // Get current date
+                const today = new Date();
+                document.getElementById('last-updated').textContent = "Last updated: " + today.toLocaleDateString();
+                
+                // Calculate total school days (sum from the PDF)
+                const totalDays = 19 + 22 + 17 + 15 + 20 + 15 + 21 + 16 + 21 + 14; // 180 days
+                
+                // Get half days
+                const halfDays = schoolData.events.filter(event => event.type === 'half_day');
+                
+                // Calculate total full days
+                const totalFullDays = totalDays - halfDays.length;
+                
+                // Calculate elapsed school days and full days
+                let elapsedDays = 0;
+                let elapsedFullDays = 0;
+                
+                // Simple calculation - if today is before first day, 0 days elapsed
+                if (today < schoolData.firstDay) {
+                    elapsedDays = 0;
+                    elapsedFullDays = 0;
+                } 
+                // If today is after last day, all days elapsed
+                else if (today > schoolData.lastDay) {
+                    elapsedDays = totalDays;
+                    elapsedFullDays = totalFullDays;
+                }
+                // Otherwise calculate based on calendar
+                else {
+                    // Count complete months
+                    const startYear = 2024;
+                    const startMonth = 8; // September
+                    const months = [];
+                    
+                    // Create array of [year, month] pairs from start to today
+                    let currentYear = startYear;
+                    let currentMonth = startMonth;
+                    
+                    while (currentYear < today.getFullYear() || 
+                          (currentYear === today.getFullYear() && currentMonth <= today.getMonth())) {
+                        months.push([currentYear, currentMonth]);
+                        currentMonth++;
+                        if (currentMonth > 11) {
+                            currentMonth = 0;
+                            currentYear++;
+                        }
+                    }
+                    
+                    // Count days in complete months
+                    for (let i = 0; i < months.length - 1; i++) {
+                        const [year, month] = months[i];
+                        const monthIndex = month;
+                        if (schoolData.monthDays[monthIndex] !== undefined) {
+                            elapsedDays += schoolData.monthDays[monthIndex];
+                        }
+                    }
+                    
+                    // Count days in current month
+                    if (months.length > 0) {
+                        const [currentYear, currentMonth] = months[months.length - 1];
+                        if (currentYear === today.getFullYear() && currentMonth === today.getMonth()) {
+                            // We're in the current month - count days up to today
+                            let daysInCurrentMonth = Math.min(today.getDate(), 
+                                schoolData.monthDays[currentMonth] || 0);
+                            
+                            // If we're in the first month (September), adjust for start date
+                            if (currentYear === startYear && currentMonth === startMonth) {
+                                const daysBeforeStart = schoolData.firstDay.getDate() - 1;
+                                daysInCurrentMonth = Math.max(0, daysInCurrentMonth - daysBeforeStart);
+                            }
+                            
+                            elapsedDays += daysInCurrentMonth;
+                        }
+                    }
+                    
+                    // Subtract school closure days that have already passed
+                    for (const event of schoolData.events) {
+                        if ((event.type === 'holiday' || event.type === 'no_school') && 
+                            event.date <= today && event.date >= schoolData.firstDay) {
+                            // Only subtract if the closure day falls on a weekday
+                            const dayOfWeek = event.date.getDay();
+                            if (dayOfWeek >= 1 && dayOfWeek <= 5) { // 1 = Monday, 5 = Friday
+                                elapsedDays--;
+                            }
+                        }
+                    }
+                    
+                    // Calculate full days by subtracting past half days
+                    elapsedFullDays = elapsedDays;
+                    for (const halfDay of halfDays) {
+                        if (halfDay.date <= today && halfDay.date >= schoolData.firstDay) {
+                            elapsedFullDays--;
+                        }
+                    }
+                }
+                
+                const remainingDays = totalDays - elapsedDays;
+                const remainingFullDays = totalFullDays - elapsedFullDays;
+                
+                const percentComplete = Math.round((elapsedDays / totalDays) * 100);
+                const fullPercentComplete = Math.round((elapsedFullDays / totalFullDays) * 100);
+                
+                // Update DOM for all days
+                document.getElementById('days-completed').textContent = elapsedDays;
+                document.getElementById('total-days').textContent = totalDays;
+                document.getElementById('days-remaining').textContent = remainingDays;
+                document.getElementById('percentage-text').textContent = percentComplete + "% Complete";
+                
+                const progressBar = document.getElementById('progress-bar');
+                progressBar.style.width = percentComplete + "%";
+                progressBar.textContent = percentComplete + "%";
+                
+                // Update DOM for full days
+                document.getElementById('full-days-completed').textContent = elapsedFullDays;
+                document.getElementById('total-full-days').textContent = totalFullDays;
+                document.getElementById('full-days-remaining').textContent = remainingFullDays;
+                document.getElementById('full-percentage-text').textContent = fullPercentComplete + "% Complete";
+                
+                const fullProgressBar = document.getElementById('full-progress-bar');
+                fullProgressBar.style.width = fullPercentComplete + "%";
+                fullProgressBar.textContent = fullPercentComplete + "%";
+                
+                // Update events lists
+                updateEvents(today);
+            }
+            
+            function updateEvents(today) {
+                const pastEventsContainer = document.getElementById('past-events');
+                const upcomingEventsContainer = document.getElementById('upcoming-events');
+                
+                pastEventsContainer.innerHTML = '';
+                upcomingEventsContainer.innerHTML = '';
+                
+                // Sort events by date
+                const sortedEvents = [...schoolData.events].sort((a, b) => a.date - b.date);
+                
+                sortedEvents.forEach(event => {
+                    const eventDate = event.date;
+                    const eventElement = document.createElement('p');
+                    eventElement.textContent = `${eventDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} - ${event.name}`;
+                    
+                    if (eventDate < today) {
+                        eventElement.classList.add('past-event');
+                        pastEventsContainer.appendChild(eventElement);
+                    } else {
+                        eventElement.classList.add('upcoming-event');
+                        upcomingEventsContainer.appendChild(eventElement);
+                    }
+                });
+                
+                // If no events in a category, display a message
+                if (pastEventsContainer.children.length === 0) {
+                    const noEvents = document.createElement('p');
+                    noEvents.textContent = "No past events";
+                    pastEventsContainer.appendChild(noEvents);
+                }
+                
+                if (upcomingEventsContainer.children.length === 0) {
+                    const noEvents = document.createElement('p');
+                    noEvents.textContent = "No upcoming events";
+                    upcomingEventsContainer.appendChild(noEvents);
+                }
+            }
+            
+            // Initialize
+            calculateProgress();
+        });
+    </script>
+</body>
+</html>
