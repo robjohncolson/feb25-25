@@ -273,8 +273,10 @@
             };
 
             function calculateProgress() {
-                // Get current date
+                // Get current date with time set to beginning of day for consistent calculations
                 const today = new Date();
+                today.setHours(0, 0, 0, 0); // Reset time to beginning of day
+                
                 document.getElementById('last-updated').textContent = "Last updated: " + today.toLocaleDateString();
                 
                 // Calculate total school days (sum from the PDF plus the extension day)
@@ -299,7 +301,7 @@
                 
                 // For testing purposes - force the remaining full days to be 74
                 // This can be removed once the calculation is verified
-                const forceRemainingFullDays = 74;
+                const forceRemainingFullDays = false;
                 
                 // Simple calculation - if today is before first day, 0 days elapsed
                 if (today < schoolData.firstDay) {
