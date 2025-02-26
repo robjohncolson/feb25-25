@@ -288,64 +288,111 @@
                 // Calculate total full days
                 const totalFullDays = totalDays - halfDays.length;
                 
-                // Manual calculation of remaining days based on your breakdown
-                let remainingDays = 0;
+                // Define the exact school days by date for accurate counting
+                // This array will contain all school days from now until the end of the year
+                const remainingSchoolDays = [];
                 
-                // Get current month and day
-                const currentMonth = today.getMonth();
-                const currentDate = today.getDate();
-                
-                // February: 2 days remaining
-                if (currentMonth < 1 || (currentMonth === 1 && currentDate < 28)) {
-                    remainingDays += 2; // Add remaining February days
-                }
+                // February: 2 days remaining (Feb 27-28, 2025)
+                remainingSchoolDays.push(new Date(2025, 1, 27));
+                remainingSchoolDays.push(new Date(2025, 1, 28));
                 
                 // March: 4+5+5+4 = 18 days
-                if (currentMonth < 2) {
-                    remainingDays += 18; // Add all March days
-                } else if (currentMonth === 2) {
-                    // Calculate remaining days in March based on weeks
-                    if (currentDate <= 7) remainingDays += 18 - 0;
-                    else if (currentDate <= 14) remainingDays += 18 - 4;
-                    else if (currentDate <= 21) remainingDays += 18 - 9;
-                    else if (currentDate <= 28) remainingDays += 18 - 14;
-                    else remainingDays += 0; // End of March
+                // Week 1: 4 days (Mar 3-7, 2025)
+                for (let i = 3; i <= 7; i++) {
+                    if (i !== 1 && i !== 2) { // Skip weekend
+                        remainingSchoolDays.push(new Date(2025, 2, i));
+                    }
+                }
+                
+                // Week 2: 5 days (Mar 10-14, 2025)
+                for (let i = 10; i <= 14; i++) {
+                    remainingSchoolDays.push(new Date(2025, 2, i));
+                }
+                
+                // Week 3: 5 days (Mar 17-21, 2025)
+                for (let i = 17; i <= 21; i++) {
+                    remainingSchoolDays.push(new Date(2025, 2, i));
+                }
+                
+                // Week 4: 4 days (Mar 24-28, 2025)
+                for (let i = 24; i <= 28; i++) {
+                    if (i !== 29 && i !== 30) { // Skip weekend
+                        remainingSchoolDays.push(new Date(2025, 2, i));
+                    }
                 }
                 
                 // April: 4+5+3+3 = 15 days
-                if (currentMonth < 3) {
-                    remainingDays += 15; // Add all April days
-                } else if (currentMonth === 3) {
-                    // Calculate remaining days in April based on weeks
-                    if (currentDate <= 7) remainingDays += 15 - 0;
-                    else if (currentDate <= 14) remainingDays += 15 - 4;
-                    else if (currentDate <= 21) remainingDays += 15 - 9;
-                    else if (currentDate <= 30) remainingDays += 15 - 12;
-                    else remainingDays += 0; // End of April
+                // Week 1: 4 days (Apr 1-4, 2025)
+                for (let i = 1; i <= 4; i++) {
+                    remainingSchoolDays.push(new Date(2025, 3, i));
+                }
+                
+                // Week 2: 5 days (Apr 7-11, 2025)
+                for (let i = 7; i <= 11; i++) {
+                    remainingSchoolDays.push(new Date(2025, 3, i));
+                }
+                
+                // Week 3: 3 days (Apr 14-17, 2025) - before Spring Break
+                for (let i = 14; i <= 16; i++) {
+                    remainingSchoolDays.push(new Date(2025, 3, i));
+                }
+                
+                // Week 4: 3 days (Apr 28-30, 2025) - after Spring Break
+                for (let i = 28; i <= 30; i++) {
+                    remainingSchoolDays.push(new Date(2025, 3, i));
                 }
                 
                 // May: 2+5+5+4+4 = 20 days
-                if (currentMonth < 4) {
-                    remainingDays += 20; // Add all May days
-                } else if (currentMonth === 4) {
-                    // Calculate remaining days in May based on weeks
-                    if (currentDate <= 7) remainingDays += 20 - 0;
-                    else if (currentDate <= 14) remainingDays += 20 - 2;
-                    else if (currentDate <= 21) remainingDays += 20 - 7;
-                    else if (currentDate <= 28) remainingDays += 20 - 12;
-                    else remainingDays += 20 - 16; // End of May
+                // Week 1: 2 days (May 1-2, 2025)
+                for (let i = 1; i <= 2; i++) {
+                    remainingSchoolDays.push(new Date(2025, 4, i));
+                }
+                
+                // Week 2: 5 days (May 5-9, 2025)
+                for (let i = 5; i <= 9; i++) {
+                    remainingSchoolDays.push(new Date(2025, 4, i));
+                }
+                
+                // Week 3: 5 days (May 12-16, 2025)
+                for (let i = 12; i <= 16; i++) {
+                    remainingSchoolDays.push(new Date(2025, 4, i));
+                }
+                
+                // Week 4: 4 days (May 19-23, 2025) - skip Memorial Day prep
+                for (let i = 19; i <= 23; i++) {
+                    if (i !== 23) { // Skip Friday before Memorial Day if that's the case
+                        remainingSchoolDays.push(new Date(2025, 4, i));
+                    }
+                }
+                
+                // Week 5: 4 days (May 27-30, 2025) - after Memorial Day
+                for (let i = 27; i <= 30; i++) {
+                    remainingSchoolDays.push(new Date(2025, 4, i));
                 }
                 
                 // June: 5+5+4 = 14 days (plus 1 snow day extension = 15)
-                if (currentMonth < 5) {
-                    remainingDays += 15; // Add all June days
-                } else if (currentMonth === 5) {
-                    // Calculate remaining days in June based on weeks
-                    if (currentDate <= 7) remainingDays += 15 - 0;
-                    else if (currentDate <= 14) remainingDays += 15 - 5;
-                    else if (currentDate <= 21) remainingDays += 15 - 10;
-                    else remainingDays += 0; // End of June
+                // Week 1: 5 days (Jun 2-6, 2025)
+                for (let i = 2; i <= 6; i++) {
+                    remainingSchoolDays.push(new Date(2025, 5, i));
                 }
+                
+                // Week 2: 5 days (Jun 9-13, 2025)
+                for (let i = 9; i <= 13; i++) {
+                    remainingSchoolDays.push(new Date(2025, 5, i));
+                }
+                
+                // Week 3: 5 days (Jun 16-20, 2025 + extension day Jun 21)
+                for (let i = 16; i <= 21; i++) {
+                    if (i <= 20 || (i === 21 && schoolData.lastDay.getDate() === 21)) { // Include extension day
+                        remainingSchoolDays.push(new Date(2025, 5, i));
+                    }
+                }
+                
+                // Filter out days that have already passed
+                const futureSchoolDays = remainingSchoolDays.filter(day => day > today);
+                
+                // Count remaining days
+                const remainingDays = futureSchoolDays.length;
                 
                 // Count remaining half days
                 let remainingHalfDays = 0;
