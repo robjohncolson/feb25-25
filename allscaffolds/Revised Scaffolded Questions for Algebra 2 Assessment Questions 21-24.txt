@@ -1,0 +1,165 @@
+\documentclass[12pt]{article}
+
+% Setting up page geometry
+\usepackage[margin=1in]{geometry}
+
+% Including packages for mathematical typesetting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Including package for enhanced enumeration
+\usepackage{enumitem}
+
+% Including package for better spacing and formatting
+\usepackage{parskip}
+
+% Setting up font: Latin Modern
+\usepackage{lmodern}
+
+% Document begins
+\begin{document}
+
+% Creating title
+\begin{center}
+    \textbf{Revised Scaffolded Questions for Algebra 2 Assessment (Questions 21--24)}
+\end{center}
+
+% Introduction
+This document provides revised scaffolded questions to help students prepare for questions 21 through 24 of the enVision Algebra 2 Progress Monitoring Assessment Form C. Each question includes four scaffolded steps to build understanding from basic concepts to the level required by the assessment, with clear guidance for concept-naive students.
+
+% Section for Question 21
+\section*{Question 21: Complex Solutions to Quadratic Equations}
+The original question asks to select the solutions to \( x^2 = -64 \). The following questions build understanding of complex solutions.
+
+\begin{enumerate}[label=21.\arabic*]
+    \item \textbf{Square Roots of Negative Numbers}: Since \( \sqrt{-1} = i \), \( \sqrt{-a} = i\sqrt{a} \) for positive \( a \). Simplify:
+    \begin{enumerate}
+        \item[a)] \( \sqrt{-25} = \sqrt{25} \cdot \sqrt{-1} = 5i \)
+        \item[b)] \( \sqrt{-36} = \_\_\_\_ \)
+        \item[c)] \( \sqrt{-100} = \_\_\_\_ \)
+        \item[d)] Why is \( \sqrt{-1} = i \)? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Simple Complex Solutions}: Solve:
+    \begin{enumerate}
+        \item[a)] \( x^2 = -16 \): \( x = \pm \sqrt{-16} = \pm 4i \)
+        \item[b)] \( x^2 = -49 \): \( x = \pm \_\_\_\_ \)
+        \item[c)] Verify: For \( x = 7i \), compute \( (7i)^2 = \_\_\_\_ \).
+    \end{enumerate}
+    \item \textbf{Quadratic Formula}: Solve \( x^2 + 9 = 0 \):
+    \begin{enumerate}
+        \item[a)] Rewrite: \( x^2 = -9 \)
+        \item[b)] Quadratic formula: \( a = 1 \), \( b = 0 \), \( c = 9 \). \\
+        \( x = \frac{0 \pm \sqrt{0 - 4(1)(9)}}{2} = \frac{\pm \sqrt{-36}}{2} = \frac{\pm 6i}{2} = \pm 3i \)
+        \item[c)] Practice: Solve \( x^2 + 25 = 0 \): \( x = \pm \_\_\_\_ \).
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Solve \( x^2 = -64 \):
+    \begin{enumerate}
+        \item[a)] Direct: \( x = \pm \sqrt{-64} = \pm 8i \)
+        \item[b)] Quadratic formula: \( x^2 + 64 = 0 \), \( a = 1 \), \( b = 0 \), \( c = 64 \). \\
+        \( x = \frac{\pm \sqrt{-256}}{2} = \frac{\pm 16i}{2} = \pm 8i \)
+        \item[c)] Verify: \( (8i)^2 = 64i^2 = -64 \), \((-8i)^2 = 64i^2 = -64 \).
+        \item[d)] Select solutions from: 8, \(-8i\), \(-8\), \(32i\), \(8i\), \(-32i\): \_\_\_\_, \_\_\_\_.
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 22
+\section*{Question 22: Multiplying Polynomials}
+The original question asks to simplify \( (x^2 + 4x)(x^2 + x + 2) \). The following questions build understanding of polynomial multiplication.
+
+\begin{enumerate}[label=22.\arabic*]
+    \item \textbf{Monomial Distribution}: Multiply by distributing each term:
+    \begin{enumerate}
+        \item[a)] \( x(x + 5) = x^2 + 5x \)
+        \item[b)] \( 3x(x^2 + 2) = \_\_\_\_ + \_\_\_\_ \)
+        \item[c)] Why distribute each term? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Binomial Multiplication}: Use FOIL:
+    \begin{enumerate}
+        \item[a)] \( (x + 3)(x + 2) \): First: \( x^2 \), Outer: \( 3x \), Inner: \( 2x \), Last: 6. \\
+        Result: \( x^2 + 5x + 6 \)
+        \item[b)] \( (x - 1)(x + 4) \): \_\_\_\_ + \_\_\_\_ + \_\_\_\_ + \_\_\_\_ = \_\_\_\_.
+    \end{enumerate}
+    \item \textbf{Quadratic by Binomial}: Multiply:
+    \begin{enumerate}
+        \item[a)] \( (x^2 + 1)(x + 3) = x^2(x + 3) + 1(x + 3) = x^3 + 3x^2 + x + 3 \)
+        \item[b)] \( (x^2 + 2x)(x + 1) = \_\_\_\_ + \_\_\_\_ + \_\_\_\_ + \_\_\_\_ = \_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Multiply \( (x^2 + 4x)(x^2 + x + 2) \):
+    \begin{enumerate}
+        \item[a)] Distribute: \( x^2(x^2 + x + 2) + 4x(x^2 + x + 2) \)
+        \item[b)] Compute: \( x^4 + x^3 + 2x^2 + 4x^3 + 4x^2 + 8x \)
+        \item[c)] Combine: \( x^4 + (1 + 4)x^3 + (2 + 4)x^2 + 8x = \_\_\_\_ \). \\
+        Compare to choices: \( x^4 + 5x^3 + 6x^2 + 8x \).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 23
+\section*{Question 23: Polynomial Function Behavior}
+The original question asks to analyze \( f(x) = x^3 + 3x^2 \), finding zeros and describing end behavior. The following questions build understanding of polynomial analysis.
+
+\begin{enumerate}[label=23.\arabic*]
+    \item \textbf{Finding Zeros}: Factor to find zeros:
+    \begin{enumerate}
+        \item[a)] \( f(x) = x(x - 4) \): Zeros: \( x = 0 \), \( x = 4 \)
+        \item[b)] \( f(x) = x^2(x + 2) \): Zeros: \( x = \_\_\_\_ \) (multiplicity \_\_\_\_), \( x = \_\_\_\_ \)
+        \item[c)] What does multiplicity mean graphically? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{End Behavior}: End behavior depends on the leading term:
+    \begin{enumerate}
+        \item[a)] \( f(x) = 2x^3 \): As \( x \to -\infty \), \( f(x) \to -\infty \); as \( x \to +\infty \), \( f(x) \to +\infty \).
+        \item[b)] \( f(x) = -x^3 + x \): Leading term: \( -x^3 \). \\
+        As \( x \to -\infty \), \( f(x) \to \_\_\_\_ \); as \( x \to +\infty \), \( f(x) \to \_\_\_\_.
+    \end{enumerate}
+    \item \textbf{Graphing Cubics}: For \( f(x) = x^3 - x^2 = x^2(x - 1) \):
+    \begin{enumerate}
+        \item[a)] Zeros: \( x = 0 \) (multiplicity 2), \( x = 1 \)
+        \item[b)] Test points: \( f(-1) = (-1)^3 - (-1)^2 = -1 - 1 = -2 \); \( f(2) = 8 - 4 = 4 \).
+        \item[c)] Multiplicity 2 at \( x = 0 \): Graph \_\_\_\_ the x-axis.
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: For \( f(x) = x^3 + 3x^2 \):
+    \begin{enumerate}
+        \item[a)] Factor: \( f(x) = x^2(x + 3) \). Zeros: \_\_\_\_, \_\_\_\_.
+        \item[b)] End behavior: Leading term \( x^3 \). \\
+        As \( x \to -\infty \), \( f(x) \to \_\_\_\_ \); as \( x \to +\infty \), \( f(x) \to \_\_\_\_.
+        \item[c)] At \( x = 0 \) (multiplicity 2): Graph \_\_\_\_ the x-axis.
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 24
+\section*{Question 24: Properties of Logarithms}
+The original question asks to explain steps to solve \( \log x + \log x^4 = 10 \) using logarithm properties. The following questions build understanding of logarithm properties.
+
+\begin{enumerate}[label=24.\arabic*]
+    \item \textbf{Logarithm Properties}: Use properties to rewrite:
+    \begin{enumerate}
+        \item[a)] \( \log(3 \cdot 4) = \log 3 + \log 4 \) (Product Property)
+        \item[b)] \( \log(x^2) = \_\_\_\_ \) (Power Property)
+        \item[c)] \( \log\left(\frac{x}{y}\right) = \_\_\_\_ \) (Quotient Property)
+        \item[d)] Why do these properties work? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Combining Logarithms}: Combine using properties:
+    \begin{enumerate}
+        \item[a)] \( \log 2 + \log 5 = \log(2 \cdot 5) = \log 10 \)
+        \item[b)] \( \log x + \log x^2 = \log(x \cdot x^2) = \log x^3 \)
+        \item[c)] Practice: \( \log 3 + \log x^3 = \_\_\_\_ \).
+    \end{enumerate}
+    \item \textbf{Solving Logarithmic Equations}: Solve:
+    \begin{enumerate}
+        \item[a)] \( \log x + \log x^3 = 8 \): \\
+        Combine: \( \log(x \cdot x^3) = \log x^4 = 8 \). \\
+        Power: \( 4 \log x = 8 \), so \( \log x = 2 \). \\
+        \( x = 10^2 = 100 \).
+        \item[b)] Practice: \( \log x + \log x^2 = 6 \): \( x = \_\_\_\_ \).
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Solve \( \log x + \log x^4 = 10 \):
+    \begin{enumerate}
+        \item[a)] Combine: \( \log(x \cdot x^4) = \log x^5 = 10 \) (Product Property).
+        \item[b)] Simplify: \( 5 \log x = 10 \) (Power Property).
+        \item[c)] Solve: \( \log x = 2 \), \( x = 10^2 = 100 \).
+        \item[d)] Verify: \( \log 100 + \log 100^4 = \log 100 + \log 10^8 = 2 + 8 = 10 \).
+    \end{enumerate}
+\end{enumerate}
+
+% Ending the document
+\end{document}

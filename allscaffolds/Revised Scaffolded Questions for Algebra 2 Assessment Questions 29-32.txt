@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+
+% Setting up page geometry
+\usepackage[margin=1in]{geometry}
+
+% Including packages for mathematical typesetting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Including package for enhanced enumeration
+\usepackage{enumitem}
+
+% Including package for better spacing and formatting
+\usepackage{parskip}
+
+% Setting up font: Latin Modern
+\usepackage{lmodern}
+
+% Document begins
+\begin{document}
+
+% Creating title
+\begin{center}
+    \textbf{Revised Scaffolded Questions for Algebra 2 Assessment (Questions 29--32)}
+\end{center}
+
+% Introduction
+This document provides revised scaffolded questions to help students prepare for questions 29 through 32 of the enVision Algebra 2 Progress Monitoring Assessment Form C. Note that questions 29 and 30 are not explicitly in the provided assessment, so they are treated as hypothetical based on the scaffold content. Each question includes four scaffolded steps to build understanding from basic concepts to the level required by the assessment, with clear guidance for concept-naive students.
+
+% Section for Question 29
+\section*{Question 29: Properties of Sine Functions (Hypothetical)}
+The assumed question asks to evaluate statements about \( y = 2\sin(x) \), including domain, vertical asymptotes, zeros, decreasing intervals, and period. The following questions build understanding of sine function properties.
+
+\begin{enumerate}[label=29.\arabic*]
+    \item \textbf{Basic Sine Properties}: For \( y = \sin(x) \), domain is all reals, range is \([-1, 1]\), period is \( 2\pi \):
+    \begin{enumerate}
+        \item[a)] True/False: Domain is all real numbers: True
+        \item[b)] True/False: Zeros at \( x = 0, \pi \): True
+        \item[c)] Why no vertical asymptotes? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Transformed Sine}: For \( y = A\sin(Bx) + C \), amplitude = \( |A| \), period = \( \frac{2\pi}{|B|} \):
+    \begin{enumerate}
+        \item[a)] \( y = 3\sin(x) + 1 \): Amplitude = 3, Period = \( 2\pi \), Range = \([-2, 4]\)
+        \item[b)] \( y = \sin(3x) \): Amplitude = \_\_\_\_, Period = \_\_\_\_
+    \end{enumerate}
+    \item \textbf{Zeros and Intervals}: For \( y = 3\sin(x) \):
+    \begin{enumerate}
+        \item[a)] Zeros in \([0, 2\pi]\): \( \sin(x) = 0 \) at \( x = 0, \pi, 2\pi \)
+        \item[b)] Decreasing: \( \sin(x) \) decreases from \( \frac{\pi}{2} \) to \( \frac{3\pi}{2} \). \\
+        For \( y = 3\sin(x) \), interval: \_\_\_\_.
+        \item[c)] Practice: Zeros of \( y = \sin(2x) \) in \([0, 2\pi]\): \_\_\_\_.
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: For \( y = 2\sin(x) \):
+    \begin{enumerate}
+        \item[a)] Domain: All real numbers (True)
+        \item[b)] Vertical asymptotes at \( x = 1 \): False (sine is continuous)
+        \item[c)] Zeros at \( x = 0, 2\pi \): True
+        \item[d)] Decreasing in \( \frac{\pi}{2} < x < \frac{3\pi}{2} \): True
+        \item[e)] Period = \( 2\pi \): True
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 30
+\section*{Question 30: Exponential Functions and Growth Factors (Hypothetical)}
+The assumed question asks to compare the growth factor of \( f \) (points \((0, 4)\), \((1, 12)\), \((-1, \frac{4}{3})\)) to other functions. The following questions build understanding of growth factors.
+
+\begin{enumerate}[label=30.\arabic*]
+    \item \textbf{Growth Factors}: For \( f(x) = ab^x \), \( b \) is the growth factor:
+    \begin{enumerate}
+        \item[a)] \( f(x) = 2 \cdot 4^x \): \( b = 4 \)
+        \item[b)] \( f(x) = 5 \cdot (0.8)^x \): \( b = \_\_\_\_ \)
+        \item[c)] Why does \( b > 1 \) mean growth? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Finding Growth Factors}: For points \((0, 3)\), \((1, 9)\):
+    \begin{enumerate}
+        \item[a)] \( f(0) = a = 3 \)
+        \item[b)] \( f(1) = 3b = 9 \), \( b = 3 \)
+        \item[c)] Verify: If another point is \((2, 27)\), check: \_\_\_\_.
+    \end{enumerate}
+    \item \textbf{Comparing Growth Factors}: Compare:
+    \begin{enumerate}
+        \item[a)] \( f(x) = 2 \cdot 5^x \), \( g(x) = 3 \cdot 2^x \): 5 > 2, so \( f(x) \) grows faster.
+        \item[b)] \( f(x) = 4^x \), \( g(x) = 1.5^x \): \_\_\_\_ grows faster.
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Points \((0, 4)\), \((1, 12)\):
+    \begin{enumerate}
+        \item[a)] \( a = 4 \), \( 4b = 12 \), \( b = 3 \)
+        \item[b)] Verify: \((-1, \frac{4}{3})\): \( f(-1) = 4 \cdot 3^{-1} = \frac{4}{3} \)
+        \item[c)] Compare: \( 4^x (b=4) \), \( 12^x (b=12) \), \( \left(\frac{4}{3}\right)^x (b=1.33) \). \\
+        Greater than 3: \_\_\_\_, \_\_\_\_.
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 31
+\section*{Question 31: Fractional Exponents and Radicals}
+The original question asks to complete a statement about \( 81^{\frac{1}{3}} \). The following questions build understanding of fractional exponents.
+
+\begin{enumerate}[label=31.\arabic*]
+    \item \textbf{Fractional Exponents}: \( a^{\frac{1}{n}} = \sqrt[n]{a} \):
+    \begin{enumerate}
+        \item[a)] \( 16^{\frac{1}{2}} = \sqrt{16} = 4 \)
+        \item[b)] \( 64^{\frac{1}{3}} = \sqrt[3]{64} = \_\_\_\_ \)
+        \item[c)] Why does \( a^{\frac{1}{3}} = \sqrt[3]{a} \)? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Exploring Bases}: For 64:
+    \begin{enumerate}
+        \item[a)] \( 64 = 4^3 \), so \( 64^{\frac{1}{3}} = (4^3)^{\frac{1}{3}} = 4 \)
+        \item[b)] \( 64^{\frac{1}{2}} = \sqrt{64} = \_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Verifying Exponents}: Verify \( 64^{\frac{1}{3}} = 4 \):
+    \begin{enumerate}
+        \item[a)] \( (64^{\frac{1}{3}})^3 = 64 \), so \( 4^3 = 64 \)
+        \item[b)] Practice: Verify \( 16^{\frac{1}{2}} = 4 \): \_\_\_\_.
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: For \( 81^{\frac{1}{3}} \):
+    \begin{enumerate}
+        \item[a)] \( 81 = 3^4 \), so \( 81^{\frac{1}{3}} = \sqrt[3]{81} \)
+        \item[b)] Verify: \( (\sqrt[3]{81})^3 = 81 \)
+        \item[c)] Equivalent to: \_\_\_\_. Because: \_\_\_\_.
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 32
+\section*{Question 32: Analyzing Expression Behavior}
+The original question asks which statements result in \( 2x^2 + 3 + \frac{7}{y} \) increasing, for \( x, y > 0 \). The following questions build understanding of expression behavior.
+
+\begin{enumerate}[label=32.\arabic*]
+    \item \textbf{Term Analysis}: For \( 2x^2 + 3 + \frac{7}{y} \):
+    \begin{enumerate}
+        \item[a)] \( 2x^2 \): As \( x \) increases, increases
+        \item[b)] \( \frac{7}{y} \): As \( y \) increases, \_\_\_\_
+        \item[c)] Why does \( \frac{7}{y} \) decrease? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Single Changes}: For \( x = 1 \), \( y = 2 \), value = \( 2(1)^2 + 3 + \frac{7}{2} = 8.5 \):
+    \begin{enumerate}
+        \item[a)] \( x \) to 2, \( y = 2 \): \( 2(2)^2 + 3 + \frac{7}{2} = 14.5 \) (increases)
+        \item[b)] \( y \) to 4, \( x = 1 \): \( 2(1)^2 + 3 + \frac{7}{4} = 6.75 \) (\_\_\_\_)
+    \end{enumerate}
+    \item \textbf{Combined Changes}: For \( x^2 + 1 + \frac{5}{y} \), test:
+    \begin{enumerate}
+        \item[a)] \( x \) increases, \( y \) decreases: Both terms increase, so expression \_\_\_\_.
+        \item[b)] \( x \) decreases, \( y \) increases: Both terms decrease, so \_\_\_\_.
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: For \( 2x^2 + 3 + \frac{7}{y} \):
+    \begin{enumerate}
+        \item[a)] \( x \) increasing, \( y \) decreasing: Increases (B)
+        \item[b)] \( y \) decreasing, \( x \) constant: Increases (D)
+        \item[c)] \( x \) increasing, \( y \) constant: Increases (F)
+        \item[d)] Select: \_\_\_\_, \_\_\_\_, \_\_\_\_.
+    \end{enumerate}
+\end{enumerate}
+
+% Ending the document
+\end{document}

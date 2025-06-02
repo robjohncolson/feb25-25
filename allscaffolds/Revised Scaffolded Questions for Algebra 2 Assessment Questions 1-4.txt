@@ -1,0 +1,160 @@
+\documentclass[12pt]{article}
+
+% Setting up page geometry
+\usepackage[margin=1in]{geometry}
+
+% Including packages for mathematical typesetting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Including package for enhanced enumeration
+\usepackage{enumitem}
+
+% Including package for better spacing and formatting
+\usepackage{parskip}
+
+% Setting up font: Latin Modern
+\usepackage{lmodern}
+
+% Document begins
+\begin{document}
+
+% Creating title
+\begin{center}
+    \textbf{Revised Scaffolded Questions for Algebra 2 Assessment (Questions 1--4)}
+\end{center}
+
+% Introduction
+This document provides revised scaffolded questions to help students prepare for questions 1 through 4 of the enVision Algebra 2 Progress Monitoring Assessment Form C. Each question includes four scaffolded steps to build understanding from basic concepts to the level required by the assessment, with clear guidance for concept-naive students.
+
+% Section for Question 1
+\section*{Question 1: Function Transformations}
+The original question involves translating a graph of an absolute value function 3 units right and 5 units down to find the new equation. The following questions build understanding of transformations.
+
+\begin{enumerate}[label=1.\arabic*]
+    \item \textbf{Basic Vertex Shifts}: The graph of \( y = |x| \) has a vertex at \( (0, 0) \). A horizontal shift right by \( h \) units changes the equation to \( y = |x - h| \), and a vertical shift down by \( k \) units adds \( -k \). Find the vertex of each:
+    \begin{enumerate}
+        \item[a)] \( y = |x - 4| \): Vertex at \( (\_\_\_\_, \_\_\_\_) \)
+        \item[b)] \( y = |x| - 3 \): Vertex at \( (\_\_\_\_, \_\_\_\_) \)
+        \item[c)] \( y = |x + 1| + 2 \): Vertex at \( (\_\_\_\_, \_\_\_\_) \)
+    \end{enumerate}
+    \item \textbf{Transformation Effects}: Match each transformation to its effect on the graph of \( y = f(x) \):
+    \begin{itemize}
+        \item \( f(x - h) \), \( h > 0 \): \_\_\_\_ (A. Shifts right \( h \) units)
+        \item \( f(x) + k \), \( k > 0 \): \_\_\_\_ (B. Shifts up \( k \) units)
+        \item \( -f(x) \): \_\_\_\_ (C. Reflects over \( x \)-axis)
+        \item \( f(x + h) \), \( h > 0 \): \_\_\_\_ (D. Shifts left \( h \) units)
+    \end{itemize}
+    \item \textbf{Combined Transformations}: Start with \( y = |x + 2| \), vertex at \( (-2, 0) \). Apply these transformations:
+    \begin{enumerate}
+        \item[a)] Shift 1 unit right: New vertex at \( (\_\_\_\_, \_\_\_\_) \)
+        \item[b)] Then shift 4 units down: New vertex at \( (\_\_\_\_, \_\_\_\_) \)
+        \item[c)] Write the equation: Start with \( y = |x + 2| \). A right shift by 1 replaces \( x \) with \( (x - 1) \), and a down shift by 4 subtracts 4. New equation: \( y = \_\_\_\_\_\_\_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Suppose the original graph is \( y = -|x - 2| + 3 \), with vertex at \( (2, 3) \). Translate it 3 units right and 5 units down:
+    \begin{enumerate}
+        \item[a)] New vertex: Right 3 units adds 3 to \( x \)-coordinate; down 5 units subtracts 5 from \( y \)-coordinate. Vertex at \( (\_\_\_\_, \_\_\_\_) \)
+        \item[b)] New equation: Start with \( y = -|x - 2| + 3 \). Right 3 units replaces \( x - 2 \) with \( (x - 3) - 2 = x - 5 \); down 5 units subtracts 5 from the constant. New equation: \( y = \_\_\_\_\_\_\_\_\_\_ \)
+        \item[c)] Compare to choices: \( y = -|x + 1| - 2 \), \( y = -|x + 1| + 2 \), \( y = -|x - 1| - 2 \), \( y = -|x - 1| + 2 \).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 2
+\section*{Question 2: Vertical Asymptotes}
+The original question asks to identify functions with a vertical asymptote at \( x = 4 \). The following questions build understanding of asymptotes in logarithmic functions.
+
+\begin{enumerate}[label=2.\arabic*]
+    \item \textbf{Logarithm Domain}: The function \( \ln(x) \) is defined for \( x > 0 \), with a vertical asymptote at \( x = 0 \). Find the domain and asymptote for:
+    \begin{enumerate}
+        \item[a)] \( f(x) = \ln(x - 1) \): Domain \( x > \_\_\_\_ \), asymptote at \( x = \_\_\_\_ \)
+        \item[b)] \( f(x) = \ln(x + 3) \): Domain \( x > \_\_\_\_ \), asymptote at \( x = \_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Transformed Logarithms}: For \( f(x) = \log(x - a) \), the asymptote is at \( x = a \). Determine the asymptote for:
+    \begin{enumerate}
+        \item[a)] \( f(x) = \log(x - 5) \): Asymptote at \( x = \_\_\_\_ \)
+        \item[b)] \( f(x) = \log(x - 2) + 3 \): Asymptote at \( x = \_\_\_\_ \)
+        \item[c)] Why does the \( +3 \) in part b not affect the asymptote? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Checking for \( x = 4 \)}: Determine if each function has a vertical asymptote at \( x = 4 \). Write the asymptote equation or “None.”
+    \begin{enumerate}
+        \item[a)] \( f(x) = \ln(x - 4) \): \_\_\_\_
+        \item[b)] \( f(x) = \ln(x) + 4 \): \_\_\_\_
+        \item[c)] \( f(x) = 2 \ln(x - 4) \): \_\_\_\_
+        \item[d)] \( f(x) = \ln(x + 4) \): \_\_\_\_
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Select all functions with a vertical asymptote at \( x = 4 \). For each, find the argument of the logarithm (e.g., \( \ln(u) \)) and set \( u = 0 \) to find the asymptote:
+    \begin{enumerate}
+        \item[a)] \( f(x) = \log_4 x - 4 \): Asymptote at \_\_\_\_
+        \item[b)] \( f(x) = \ln(x - 4) \): Asymptote at \_\_\_\_
+        \item[c)] \( f(x) = \log(x - 4) + 4 \): Asymptote at \_\_\_\_
+        \item[d)] \( f(x) = 4 \ln x - 4 \): Asymptote at \_\_\_\_
+        \item[e)] \( f(x) = \log(x - 4) \): Asymptote at \_\_\_\_
+        \item[f)] Which have asymptote at \( x = 4 \)? \_\_\_\_
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 3
+\section*{Question 3: Work Rate Problems}
+The original question involves two faucets filling a tank together, one taking 8 hours and the other 4 hours. The following questions build understanding of work rates.
+
+\begin{enumerate}[label=3.\arabic*]
+    \item \textbf{Understanding Rates}: If a faucet fills a tank in \( t \) hours, its rate is \( \frac{1}{t} \) tanks per hour. Calculate:
+    \begin{enumerate}
+        \item[a)] Faucet takes 5 hours: Rate = \_\_\_\_ tank/hour
+        \item[b)] Faucet takes 10 hours: Rate = \_\_\_\_ tank/hour
+        \item[c)] Why is the rate the reciprocal of time? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Combining Rates}: Two faucets work together. Faucet A takes 6 hours (\( \frac{1}{6} \) tank/hour), Faucet B takes 12 hours (\( \frac{1}{12} \) tank/hour).
+    \begin{enumerate}
+        \item[a)] Combined rate: \( \frac{1}{6} + \frac{1}{12} = \frac{\_\_\_\_}{12} + \frac{\_\_\_\_}{12} = \frac{\_\_\_\_}{12} \) tank/hour
+        \item[b)] Time to fill: \( t = \frac{1}{\text{combined rate}} = \_\_\_\_ \) hours
+    \end{enumerate}
+    \item \textbf{Setting Up the Equation}: For Faucet A (takes \( a \) hours) and Faucet B (takes \( b \) hours), the combined time \( t \) satisfies:
+    \[
+    \frac{1}{a} + \frac{1}{b} = \frac{1}{t}
+    \]
+    Write the equation for:
+    \begin{enumerate}
+        \item[a)] Faucet A: 10 hours, Faucet B: 5 hours: \_\_\_\_
+        \item[b)] Solve the equation from part a: Combined rate = \_\_\_\_, so \( t = \_\_\_\_ \) hours
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Faucet A takes 8 hours, Faucet B takes 4 hours.
+    \begin{enumerate}
+        \item[a)] Rates: Faucet A: \_\_\_\_ tank/hour, Faucet B: \_\_\_\_ tank/hour
+        \item[b)] Combined rate: \( \frac{1}{8} + \frac{1}{4} = \frac{\_\_\_\_}{8} + \frac{\_\_\_\_}{8} = \frac{\_\_\_\_}{8} \)
+        \item[c)] Time to fill: \( t = \frac{1}{\text{combined rate}} = \_\_\_\_ \) hours
+        \item[d)] Convert to hours and minutes: \_\_\_\_ hours, \_\_\_\_ minutes
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 4
+\section*{Question 4: Vertex Form and Transformations}
+The original question involves finding the vertex of \( g(x) = f(x - 3) - 2 \), given \( f(x) \) has vertex at \( (2, -4) \). The following questions build understanding of quadratic transformations.
+
+\begin{enumerate}[label=4.\arabic*]
+    \item \textbf{Vertex of Quadratics}: For a quadratic \( f(x) = a(x - h)^2 + k \), the vertex is \( (h, k) \). Find the vertex:
+    \begin{enumerate}
+        \item[a)] \( f(x) = (x - 1)^2 + 4 \): Vertex at \( (\_\_\_\_, \_\_\_\_) \)
+        \item[b)] \( f(x) = 2(x + 3)^2 - 2 \): Vertex at \( (\_\_\_\_, \_\_\_\_) \)
+    \end{enumerate}
+    \item \textbf{Horizontal Shifts}: If \( f(x) \) has vertex at \( (3, 1) \), find the vertex after:
+    \begin{enumerate}
+        \item[a)] \( g(x) = f(x - 2) \): Shift right 2 units, vertex at \( (\_\_\_\_, \_\_\_\_) \)
+        \item[b)] \( h(x) = f(x + 1) \): Shift left 1 unit, vertex at \( (\_\_\_\_, \_\_\_\_) \)
+    \end{enumerate}
+    \item \textbf{Combined Shifts}: If \( f(x) \) has vertex at \( (1, 2) \), find the vertex of:
+    \begin{enumerate}
+        \item[a)] \( g(x) = f(x - 1) + 3 \): Shift right 1 unit, up 3 units, vertex at \( (\_\_\_\_, \_\_\_\_) \)
+        \item[b)] \( h(x) = f(x + 2) - 1 \): Shift left 2 units, down 1 unit, vertex at \( (\_\_\_\_, \_\_\_\_) \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Given \( f(x) \) has vertex at \( (2, -4) \), find the vertex of \( g(x) = f(x - 3) - 2 \):
+    \begin{enumerate}
+        \item[a)] Horizontal shift: \( x - 3 \) shifts \_\_\_\_ units \_\_\_\_
+        \item[b)] Vertical shift: \( -2 \) shifts \_\_\_\_ units \_\_\_\_
+        \item[c)] New vertex: \( (\_\_\_\_, \_\_\_\_) \)
+    \end{enumerate}
+\end{enumerate}
+
+% Ending the document
+\end{document}

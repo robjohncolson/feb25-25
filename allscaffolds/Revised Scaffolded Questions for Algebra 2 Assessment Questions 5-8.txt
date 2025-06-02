@@ -1,0 +1,156 @@
+\documentclass[12pt]{article}
+
+% Setting up page geometry
+\usepackage[margin=1in]{geometry}
+
+% Including packages for mathematical typesetting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Including package for enhanced enumeration
+\usepackage{enumitem}
+
+% Including package for better spacing and formatting
+\usepackage{parskip}
+
+% Setting up font: Latin Modern
+\usepackage{lmodern}
+
+% Document begins
+\begin{document}
+
+% Creating title
+\begin{center}
+    \textbf{Revised Scaffolded Questions for Algebra 2 Assessment (Questions 5--8)}
+\end{center}
+
+% Introduction
+This document provides revised scaffolded questions to help students prepare for questions 5 through 8 of the enVision Algebra 2 Progress Monitoring Assessment Form C. Each question includes four scaffolded steps to build understanding from basic concepts to the level required by the assessment, with clear guidance for concept-naive students.
+
+% Section for Question 5
+\section*{Question 5: Finding Zeros of Polynomial Functions}
+The original question asks to select all \( x \)-values where the polynomial \( f(x) = x^4 - 2x^3 - 29x^2 + 30x \), modeling a pelican’s height, equals zero. The following questions build understanding of finding polynomial zeros.
+
+\begin{enumerate}[label=5.\arabic*]
+    \item \textbf{Understanding Zeros}: A zero of a function is an \( x \)-value where \( f(x) = 0 \), where the graph crosses the x-axis. Find the zeros of:
+    \begin{enumerate}
+        \item[a)] \( f(x) = x - 2 \): Set \( x - 2 = 0 \), zero at \( x = \_\_\_\_ \)
+        \item[b)] \( f(x) = x^2 - 4 = (x - 2)(x + 2) \): Zeros at \( x = \_\_\_\_ \), \( x = \_\_\_\_ \)
+        \item[c)] What does a zero represent for a height function? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Factoring Polynomials}: Factor each polynomial and find zeros:
+    \begin{enumerate}
+        \item[a)] \( f(x) = x^2 + 3x = x(x + 3) \): Zeros at \( x = \_\_\_\_ \), \( x = \_\_\_\_ \)
+        \item[b)] \( f(x) = x^3 - 9x = x(x^2 - 9) = x(x - 3)(x + 3) \): Zeros at \( x = \_\_\_\_ \), \( x = \_\_\_\_ \), \( x = \_\_\_\_ \)
+        \item[c)] If a factor appears twice (e.g., \( (x - 1)^2 \)), the zero has multiplicity 2, meaning the graph touches the x-axis. Why might multiplicity matter? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Contextual Zeros}: A ball’s height is modeled by \( h(t) = -16t^2 + 48t \). Find when it hits the ground (\( h(t) = 0 \)):
+    \begin{enumerate}
+        \item[a)] Factor: \( -16t^2 + 48t = -16t(t - 3) = 0 \). Zeros at \( t = \_\_\_\_ \), \( t = \_\_\_\_ \)
+        \item[b)] Interpret: \( t = 0 \) is when the ball is \_\_\_\_; \( t = 3 \) is when it \_\_\_\_.
+        \item[c)] Why ignore negative times? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Testing Zeros}: For a polynomial \( f(x) = x^4 - x^3 - 8x^2 + 8x \), test if the following are zeros by substituting:
+    \begin{enumerate}
+        \item[a)] \( x = -2 \): Compute \( f(-2) = \_\_\_\_ \). Is it a zero? \_\_\_\_
+        \item[b)] \( x = 1 \): Compute \( f(1) = \_\_\_\_ \). Is it a zero? \_\_\_\_
+        \item[c)] For the original \( f(x) = x^4 - 2x^3 - 29x^2 + 30x \), which of these are zeros: \( -6, -5, 0, 1, 4, 6 \)? Test two values (e.g., \( x = 0 \), \( x = 1 \)).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 6
+\section*{Question 6: Solving Quadratic Equations with Complex Numbers}
+The original question asks to solve \( -x^2 + 5x = 7 \) over complex numbers. The following questions build understanding of the quadratic formula and complex solutions.
+
+\begin{enumerate}[label=6.\arabic*]
+    \item \textbf{Complex Numbers}: The imaginary unit \( i \) satisfies \( i^2 = -1 \). Simplify:
+    \begin{enumerate}
+        \item[a)] \( \sqrt{-16} = \sqrt{16} \cdot \sqrt{-1} = \_\_\_\_ \)
+        \item[b)] \( \sqrt{-36} = \_\_\_\_ \)
+        \item[c)] Why is \( \sqrt{-1} = i \)? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Quadratic Formula}: For \( ax^2 + bx + c = 0 \), solutions are \( x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \). Solve \( x^2 - 2x - 3 = 0 \):
+    \begin{enumerate}
+        \item[a)] Identify: \( a = \_\_\_\_ \), \( b = \_\_\_\_ \), \( c = \_\_\_\_ \)
+        \item[b)] Discriminant: \( b^2 - 4ac = \_\_\_\_ \). Is it positive, negative, or zero? \_\_\_\_
+        \item[c)] Solutions: \( x = \frac{\_\_\_\_ \pm \sqrt{\_\_\_\_}}{2} = \_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Complex Solutions}: Solve \( x^2 + 2x + 5 = 0 \):
+    \begin{enumerate}
+        \item[a)] \( a = \_\_\_\_ \), \( b = \_\_\_\_ \), \( c = \_\_\_\_ \)
+        \item[b)] Discriminant: \( b^2 - 4ac = \_\_\_\_ \). Since it’s negative, expect complex roots.
+        \item[c)] Apply formula: \( x = \frac{-2 \pm \sqrt{-16}}{2} = \frac{-2 \pm 4i}{2} = \_\_\_\_ \)
+        \item[d)] Why does a negative discriminant mean complex roots? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Solve \( -x^2 + 5x = 7 \):
+    \begin{enumerate}
+        \item[a)] Rewrite in standard form: \_\_\_\_ = 0
+        \item[b)] Identify: \( a = \_\_\_\_ \), \( b = \_\_\_\_ \), \( c = \_\_\_\_ \)
+        \item[c)] Discriminant: \( b^2 - 4ac = \_\_\_\_ \)
+        \item[d)] Solutions: \( x = \frac{\_\_\_\_ \pm \sqrt{\_\_\_\_}}{2} = \_\_\_\_ \). Compare to choices: \( \frac{5 \pm i\sqrt{3}}{2} \), \( \frac{5 \pm i\sqrt{53}}{2} \), \( \frac{-5 \pm i\sqrt{53}}{2} \), \( \frac{-5 \pm i\sqrt{3}}{2} \).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 7
+\section*{Question 7: Exponential Equations with Natural Logarithms}
+The original question asks to solve \( 5e^{\frac{x}{2}} = 10 \). The following questions build understanding of solving exponential equations.
+
+\begin{enumerate}[label=7.\arabic*]
+    \item \textbf{Logarithm Properties}: Since \(\ln(e^x) = x\) (because \(\ln\) is the inverse of \(e^x\)), simplify:
+    \begin{enumerate}
+        \item[a)] \( \ln(e^3) = \_\_\_\_ \)
+        \item[b)] \( e^{\ln(4)} = \_\_\_\_ \)
+        \item[c)] Why does \(\ln(e^x) = x\)? \_\_\_\_\_\_\_\_\_\_\_\_
+    \end{enumerate}
+    \item \textbf{Simple Exponential Equations}: Solve:
+    \begin{enumerate}
+        \item[a)] \( e^x = 6 \): Take \(\ln\) of both sides: \( \ln(e^x) = \ln(6) \), so \( x = \_\_\_\_ \)
+        \item[b)] \( e^x = 2 \): \( x = \_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Coefficients in Exponents}: Solve \( 3e^x = 15 \):
+    \begin{enumerate}
+        \item[a)] Isolate: \( e^x = \frac{15}{3} = \_\_\_\_ \)
+        \item[b)] Take \(\ln\): \( \ln(e^x) = \ln(\_\_\_\_) \)
+        \item[c)] Solve: \( x = \_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Solve \( 5e^{\frac{x}{2}} = 10 \):
+    \begin{enumerate}
+        \item[a)] Isolate: \( e^{\frac{x}{2}} = \frac{10}{5} = \_\_\_\_ \)
+        \item[b)] Take \(\ln\): \( \ln\left(e^{\frac{x}{2}}\right) = \ln(\_\_\_\_) \)
+        \item[c)] Simplify: \( \frac{x}{2} = \ln(\_\_\_\_) \)
+        \item[d)] Solve: \( x = \_\_\_\_ \). Write as \( x = \ln(\_\_\_\_) \) to match the original format.
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 8
+\section*{Question 8: Multiplying Complex Numbers}
+The original question asks to simplify \( (i - 5)(3 + 2i) \). The following questions build understanding of complex number multiplication.
+
+\begin{enumerate}[label=8.\arabic*]
+    \item \textbf{Complex Number Basics}: Since \( i^2 = -1 \), simplify:
+    \begin{enumerate}
+        \item[a)] \( i^2 = \_\_\_\_ \)
+        \item[b)] \( (2i)^2 = 4i^2 = \_\_\_\_ \)
+        \item[c)] Combine: \( 3 + 2i - 5i = \_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Simple Multiplication}: Multiply \( (1 + i)(2 + i) \):
+    \begin{enumerate}
+        \item[a)] Use FOIL: \( (1)(2) + (1)(i) + (i)(2) + (i)(i) = \_\_\_\_ \)
+        \item[b)] Simplify: \( 2 + i + 2i + i^2 = 2 + 3i - 1 = \_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Practice with Larger Numbers}: Multiply \( (2 - i)(3 + 2i) \):
+    \begin{enumerate}
+        \item[a)] FOIL: \( (2)(3) + (2)(2i) + (-i)(3) + (-i)(2i) = \_\_\_\_ \)
+        \item[b)] Simplify: \( 6 + 4i - 3i - 2i^2 = \_\_\_\_ \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Simplify \( (i - 5)(3 + 2i) \):
+    \begin{enumerate}
+        \item[a)] FOIL: \( (i)(3) + (i)(2i) + (-5)(3) + (-5)(2i) = \_\_\_\_ \)
+        \item[b)] Simplify: \( 3i + 2i^2 - 15 - 10i = \_\_\_\_ \)
+        \item[c)] Combine: \( \_\_\_\_ \). Compare to choices: \( -7i - 13 \), \( 13i - 17 \), \( -7i - 17 \), \( -13i - 17 \).
+    \end{enumerate}
+\end{enumerate}
+
+% Ending the document
+\end{document}

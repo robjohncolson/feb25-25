@@ -1,0 +1,326 @@
+\documentclass[12pt]{article}
+
+% Setting up page geometry
+\usepackage[margin=1in]{geometry}
+
+% Including packages for mathematical typesetting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Including package for enhanced enumeration
+\usepackage{enumitem}
+
+% Including package for better spacing and formatting
+\usepackage{parskip}
+
+% Setting up font: Latin Modern
+\usepackage{lmodern}
+
+% For check boxes
+\usepackage{wasysym} % For \Square and \XBox
+
+% For the graph in Q30
+\usepackage{tikz}
+
+% Document begins
+\begin{document}
+
+% Creating title
+\begin{center}
+    \textbf{Algebra 2 Assessment Review: Exponentials \& Logarithms}
+\end{center}
+
+This document provides revised scaffolded questions to help students prepare for questions 7, 16, 24, 30, 31, and the exponential part of 33 (Exponentials \& Logarithms group) of the enVision Algebra 2 Progress Monitoring Assessment Form C. Each question includes scaffolded steps to build understanding from basic concepts to the level required by the assessment, with clear guidance for concept-naive students. This is followed by the original assessment questions.
+
+\section*{Scaffolded Review Questions}
+
+% Section for Question 7
+\subsection*{Scaffolded Question for Assessment Item 7: Exponential Equations with Natural Logarithms}
+The original question asks to solve \( 5e^{\frac{x}{2}} = 10 \). The following questions build understanding of solving exponential equations.
+
+\begin{enumerate}[label=7.\arabic*]
+    \item \textbf{Logarithm Properties}: Since \(\ln(e^y) = y\) (because \(\ln\) is the inverse of \(e^y\)), simplify:
+    \begin{enumerate}[label=\alph*)]
+        \item \( \ln(e^3) = \underline{\hspace{1cm}} \)
+        \item \( e^{\ln(4)} = \underline{\hspace{1cm}} \)
+        \item Why does \(\ln(e^y) = y\)? \underline{\hspace{6cm}}
+    \end{enumerate}
+    \item \textbf{Simple Exponential Equations}: Solve:
+    \begin{enumerate}[label=\alph*)]
+        \item \( e^x = 6 \): Take \(\ln\) of both sides: \( \ln(e^x) = \ln(6) \), so \( x = \underline{\hspace{1.5cm}} \)
+        \item \( e^x = 2 \): \( x = \underline{\hspace{1.5cm}} \)
+    \end{enumerate}
+    \item \textbf{Coefficients in Exponents}: Solve \( 3e^x = 15 \):
+    \begin{enumerate}[label=\alph*)]
+        \item Isolate: \( e^x = \frac{15}{3} = \underline{\hspace{1cm}} \)
+        \item Take \(\ln\): \( \ln(e^x) = \ln(\underline{\hspace{1cm}}) \)
+        \item Solve: \( x = \underline{\hspace{1.5cm}} \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Solve \( 5e^{\frac{x}{2}} = 10 \):
+    \begin{enumerate}[label=\alph*)]
+        \item Isolate: \( e^{\frac{x}{2}} = \frac{10}{5} = \underline{\hspace{1cm}} \)
+        \item Take \(\ln\): \( \ln\left(e^{\frac{x}{2}}\right) = \ln(\underline{\hspace{1cm}}) \)
+        \item Simplify: \( \frac{x}{2} = \ln(\underline{\hspace{1cm}}) \)
+        \item Solve: \( x = \underline{\hspace{1.5cm}} \). Write as \( x = \ln(\underline{\hspace{1.5cm}}) \) to match the original format if needed (or \(x=2\ln(\text{value})\) then \(x=\ln(\text{value}^2)\)).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 16
+\subsection*{Scaffolded Question for Assessment Item 16: Solving Logarithmic Equations}
+The original question asks to solve \( -2 \ln (3x) = 5 \). The following questions build skills in solving equations involving natural logarithms.
+
+\begin{enumerate}[label=16.\arabic*]
+    \item \textbf{Understanding Logarithms}: If \( \ln(y) = 2 \), find \( y \). Use the fact that \( \ln(y) = c \) means \( y = e^c \). \(y = \underline{\hspace{1.5cm}}\)
+    \item \textbf{Solving a Simple Log Equation}: Solve the equation \( \ln(x) = 3 \). Write the equation in exponential form and compute \( x \). \(x = \underline{\hspace{1.5cm}}\)
+    \item \textbf{Handling Coefficients}: Solve the equation \( 2 \ln(x) = 4 \). First, isolate the logarithm by dividing both sides, then convert to exponential form to find \( x \).
+    \( \ln(x) = \underline{\hspace{1cm}} \), so \( x = \underline{\hspace{1.5cm}} \)
+    \item \textbf{Applying to the Original Equation}: Solve \( -2 \ln (3x) = 5 \).
+    \begin{enumerate}[label=\alph*)]
+        \item Divide both sides to isolate the logarithm: \( \ln(3x) = \underline{\hspace{1.5cm}} \)
+        \item Convert to exponential form: \( 3x = e^{\underline{\hspace{1.5cm}}} \)
+        \item Solve for \( x \): \( x = \frac{e^{\underline{\hspace{1.5cm}}}}{3} \approx \underline{\hspace{1.5cm}} \). Compare to the choices.
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 24
+\subsection*{Scaffolded Question for Assessment Item 24: Properties of Logarithms}
+The original question asks to explain steps to solve \( \log x + \log x^4 = 10 \) using logarithm properties. The following questions build understanding of logarithm properties.
+
+\begin{enumerate}[label=24.\arabic*]
+    \item \textbf{Logarithm Properties}: Use properties to rewrite:
+    \begin{enumerate}[label=\alph*)]
+        \item \( \log(3 \cdot 4) = \log 3 + \log 4 \) (Product Property)
+        \item \( \log(x^2) = \underline{\hspace{1.5cm}} \) (Power Property)
+        \item \( \log\left(\frac{x}{y}\right) = \underline{\hspace{2.5cm}} \) (Quotient Property)
+        \item Why do these properties work? \underline{\hspace{6cm}} (Hint: Relate to exponent rules)
+    \end{enumerate}
+    \item \textbf{Combining Logarithms}: Combine using properties:
+    \begin{enumerate}[label=\alph*)]
+        \item \( \log 2 + \log 5 = \log(2 \cdot 5) = \log 10 \)
+        \item \( \log x + \log x^2 = \log(x \cdot x^2) = \log x^3 \)
+        \item Practice: \( \log 3 + \log x^3 = \underline{\hspace{2cm}} \).
+    \end{enumerate}
+    \item \textbf{Solving Logarithmic Equations}: Solve:
+    \begin{enumerate}[label=\alph*)]
+        \item \( \log x + \log x^3 = 8 \): \\
+        Combine: \( \log(x \cdot x^3) = \log x^4 = 8 \). \\
+        Power (alternative after combining): If \( \log M = N \), then \( M = 10^N \). So \( x^4 = 10^8 \).
+        Solve for x: \( x = (10^8)^{1/4} = 10^2 = 100 \). \\
+        Or using power property first: \( 4 \log x = 8 \), so \( \log x = 2 \). \\
+        \( x = 10^2 = 100 \).
+        \item Practice: \( \log x + \log x^2 = 6 \): \( x = \underline{\hspace{1cm}} \).
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Solve \( \log x + \log x^4 = 10 \):
+    \begin{enumerate}[label=\alph*)]
+        \item Combine: \( \log(x \cdot x^4) = \log x^5 = 10 \) (Property used: \underline{\hspace{2cm}}).
+        \item Simplify: \( 5 \log x = 10 \) (Property used: \underline{\hspace{2cm}}).
+        \item Solve: \( \log x = 2 \), \( x = 10^2 = 100 \).
+        \item Verify: \( \log 100 + \log 100^4 = \log 100 + \log (10^2)^4 = \log 10^2 + \log 10^8 = 2 + 8 = 10 \).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 30
+\subsection*{Scaffolded Question for Assessment Item 30: Exponential Functions and Growth Factors (Hypothetical based on graph)}
+The assumed question asks to compare the growth factor of \( f \) (points \((0, 4)\), \((1, 12)\), \((-1, \frac{4}{3})\)) to other functions. The following questions build understanding of growth factors.
+
+\begin{enumerate}[label=30.\arabic*]
+    \item \textbf{Growth Factors}: For \( f(x) = ab^x \), \( b \) is the growth factor:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = 2 \cdot 4^x \): \( b = 4 \)
+        \item \( f(x) = 5 \cdot (0.8)^x \): \( b = \underline{\hspace{1cm}} \)
+        \item Why does \( b > 1 \) mean growth? \underline{\hspace{6cm}}
+    \end{enumerate}
+    \item \textbf{Finding Growth Factors}: For points \((0, 3)\), \((1, 9)\):
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(0) = a \cdot b^0 = a = 3 \)
+        \item \( f(1) = ab^1 = 3b = 9 \), \( b = 3 \)
+        \item Verify: If another point is \((2, 27)\), check: \(f(2) = 3 \cdot 3^2 = 3 \cdot 9 = 27 \). (Matches? \underline{\hspace{0.5cm}})
+    \end{enumerate}
+    \item \textbf{Comparing Growth Factors}: Compare:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = 2 \cdot 5^x \), \( g(x) = 3 \cdot 2^x \): 5 > 2, so \( f(x) \) grows faster.
+        \item \( f(x) = 4^x \), \( g(x) = 1.5^x \): \underline{\hspace{1.5cm}} grows faster.
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Points \((0, 4)\), \((1, 12)\):
+    \begin{enumerate}[label=\alph*)]
+        \item \( a = 4 \) (from \(f(0)=4\)), \( ab = 4b = 12 \), \( b = 3 \). So \(f(x) = 4 \cdot 3^x\).
+        \item Verify: \((-1, \frac{4}{3})\): \( f(-1) = 4 \cdot 3^{-1} = 4 \cdot \frac{1}{3} = \frac{4}{3} \). (Matches? \underline{\hspace{0.5cm}})
+        \item Compare its growth factor \(b=3\) to other functions' growth factors:
+        For A: \(a(x) = 3 \cdot 4^x \implies b=4\). Greater than 3? \underline{\hspace{0.5cm}}
+        For B: \(b(x) = 1.25^x \implies b=1.25\). Greater than 3? \underline{\hspace{0.5cm}}
+        For C: \(c(x) = (\frac{1}{12}) \cdot 12^x \implies b=12\). Greater than 3? \underline{\hspace{0.5cm}}
+        For D: \(d(x) = 12 \cdot (\frac{4}{3})^x \implies b=\frac{4}{3} \approx 1.33\). Greater than 3? \underline{\hspace{0.5cm}}
+        For E: \(e(x) = (\frac{9}{16})^x \implies b=\frac{9}{16} \approx 0.56\). Greater than 3? \underline{\hspace{0.5cm}}
+        \item Select functions with growth factor greater than 3: \underline{\hspace{2cm}}.
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 31
+\subsection*{Scaffolded Question for Assessment Item 31: Fractional Exponents and Radicals}
+The original question asks to complete a statement about \( 81^{\frac{1}{3}} \). The following questions build understanding of fractional exponents.
+
+\begin{enumerate}[label=31.\arabic*]
+    \item \textbf{Fractional Exponents}: \( a^{\frac{1}{n}} = \sqrt[n]{a} \):
+    \begin{enumerate}[label=\alph*)]
+        \item \( 16^{\frac{1}{2}} = \sqrt{16} = 4 \)
+        \item \( 64^{\frac{1}{3}} = \sqrt[3]{64} = \underline{\hspace{1cm}} \)
+        \item Why does \( a^{\frac{1}{3}} = \sqrt[3]{a} \)? \underline{\hspace{6cm}} (Hint: \((a^{1/3})^3 = a^1\))
+    \end{enumerate}
+    \item \textbf{Exploring Bases}: For 64:
+    \begin{enumerate}[label=\alph*)]
+        \item \( 64 = 4^3 \), so \( 64^{\frac{1}{3}} = (4^3)^{\frac{1}{3}} = 4^{(3 \cdot \frac{1}{3})} = 4^1 = 4 \)
+        \item \( 64^{\frac{1}{2}} = \sqrt{64} = \underline{\hspace{1cm}} \)
+    \end{enumerate}
+    \item \textbf{Verifying Exponents}: Verify \( 64^{\frac{1}{3}} = 4 \):
+    \begin{enumerate}[label=\alph*)]
+        \item \( (64^{\frac{1}{3}})^3 = 64 \), so \( 4^3 = 64 \). (Is this true? \underline{\hspace{0.5cm}})
+        \item Practice: Verify \( 16^{\frac{1}{2}} = 4 \): \( (16^{1/2})^2 = 16 \), so \( (\underline{\hspace{0.5cm}})^2 = 16 \). (Is this true? \underline{\hspace{0.5cm}})
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: For \( 81^{\frac{1}{3}} \):
+    \begin{enumerate}[label=\alph*)]
+        \item \( 81 = 3^4 \), so \( 81^{\frac{1}{3}} = \sqrt[3]{81} = \sqrt[3]{3^3 \cdot 3} = 3\sqrt[3]{3} \).
+        \item The question asks what \(81^{1/3}\) is equivalent to, and what is the reason.
+        Equivalent to (from choices): \underline{\hspace{1.5cm}}
+        Because (from choices): \underline{\hspace{2cm}}
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 33 (Exponential Part)
+\subsection*{Scaffolded Question for Assessment Item 33: Exponential Growth Models}
+The original question involves modeling Lucia’s linear (12 residents/day) and Caleb’s exponential (4 people, each contacting 4 more daily) growth. This focuses on the exponential part for Caleb.
+
+\begin{enumerate}[label=33-Exp.\arabic*]
+    \item \textbf{Exponential Models}: Exponential functions \( f(x) = ab^x \) model multiplicative growth:
+    \begin{enumerate}[label=\alph*)]
+        \item Triples daily, starts at 5: \( f(x) = 5 \cdot 3^x \)
+        \item Starts at 2, each contacts 3 more daily (meaning total becomes 4 times previous - original 1 + 3 more):
+        Day 0: 2 (initial)
+        Day 1: \(2 \cdot 4 = 8\)
+        Day 2: \(8 \cdot 4 = 32\)
+        This means the base \(b=4\). So \(f(x) = 2 \cdot 4^x\).
+        The question states "Caleb contacts 4 people on the first day. Those people will then contact 4 people the next day."
+        This phrasing is a bit ambiguous.
+        Interpretation 1: Caleb contacts 4 unique people on day 1. On day 2, THOSE 4 people each contact 4 MORE people (16 new people).
+        Day 1 (x=1): 4 people contacted by Caleb. Total contacted = 4.
+        Day 2 (x=2): The 4 from Day 1 each contact 4 more. \(4 \times 4 = 16\) new people. Total contacted = \(4+16=20\). (This is not simple \(ab^x\)).
+
+        Interpretation 2 (More standard for these problems): Caleb's initial group is 4. Each person in the group then contacts 4 *new* people each day, and those new people become part of the group for the next day's contacting.
+        Let \(g(x)\) be the number of people contacted on day \(x\).
+        Day 1 (\(x=1\)): Caleb contacts 4 people.
+        Day 2 (\(x=2\)): Those 4 people each contact 4 people. So \(4 \times 4 = 16\) people are contacted on day 2.
+        Day 3 (\(x=3\)): Those 16 people each contact 4 people. So \(16 \times 4 = 64\) people are contacted on day 3.
+        This means \(g(x) = 4^x\) is the number of people contacted *on day x*.
+        The total number of people contacted *by* day x would be a geometric sum \(4+16+64+... = \sum_{i=1}^x 4^i\).
+        However, the problem says "Write a function that models the number of people contacted by both Lucia and Caleb after x days." This usually implies the *cumulative* number of people in Caleb's network (or people he has *caused* to be contacted).
+
+        Let's re-read "Caleb uses a different strategy. He contacts 4 people on the first day. Those people will then contact 4 people the next day. This pattern continues each day."
+        If \(g(x)\) is the *total number of people in Caleb's network* who have been contacted:
+        End of Day 1 (\(x=1\)): Caleb contacts 4. \(g(1)=4\).
+        End of Day 2 (\(x=2\)): The 4 from Day 1 each contact 4 people. \(4 \times 4 = 16\) new. Total in network = \(4 (\text{from day 1}) + 16 (\text{new on day 2}) = 20\). This is not \(4^x\).
+
+        Let's consider the wording "a function that models the number of people contacted by ... Caleb after x days."
+        If Caleb himself contacts 4 people (on day 1), and those 4 people contact 4 people (on day 2), etc., the number of *new* people contacted on day \(x\) is \(4^x\).
+        The problem asks for \(g(x)\) in \(g(x) = \text{Lucia}(x) + \text{Caleb}(x)\) for "number of residents she/he contacts after x days".
+        This seems to imply for Caleb \(C(x)\) should be the total number of people reached by his method.
+        If it means the number of *newly* contacted people on day x by Caleb's method, it's \(4^x\).
+        If \(g(x)\) in the question means \(f(x) = \text{Lucia's contribution} + \text{Caleb's contribution}\), and Caleb's contribution is the *number of people reached by his method by day x*, this is complicated.
+        The fill-in-the-blank for \(g(x)\) looks like \( \text{Lucia_term} + \text{Caleb_exp_term} \).
+        This strongly suggests Caleb's contribution is a simple \(a \cdot b^x\).
+        Given "Caleb contacts 4 people on the first day", it's likely \(a \cdot b^1 = 4\).
+        "Those people will then contact 4 people the next day" -- if the original 4 become 16 (i.e. multiply by 4), then \(b=4\).
+        If \(a \cdot 4^1 = 4\), then \(a=1\). So Caleb's function is \(1 \cdot 4^x = 4^x\).
+        Let's test:
+        Day 1 (\(x=1\)): \(4^1 = 4\) people. (This is what Caleb contacts).
+        Day 2 (\(x=2\)): \(4^2 = 16\) people. (This means the 4 from Day 1 generated 16 new people).
+        So, \(C(x) = 4^x\) appears to be the number of *new* people contacted on day \(x\) through Caleb's method.
+        The scaffold has: "Caleb: \(4^x\)" which aligns with this interpretation.
+        So, for Caleb: \( C(x) = \underline{4^x} \)
+        \item Why cumulative growth for exponential? \underline{Each new person adds to the base for the next period's growth.}
+    \end{enumerate}
+\end{enumerate}
+
+
+\section*{Original Assessment Questions}
+
+\subsection*{Question 7}
+Find the exact solution to \( 5e^{\frac{x}{2}} = 10 \).
+\[ x = \ln ( \framebox[1.5cm]{\phantom{X}} ) \]
+
+\subsection*{Question 16}
+Solve the equation \( -2 \ln(3x) = 5 \).
+\begin{enumerate}[label=\Alph*.]
+    \item 0.082
+    \item 0.027
+    \item 4.061
+    \item 36.547
+\end{enumerate}
+
+\subsection*{Question 24}
+Explain each step used to solve the equation using the properties of logarithms.
+\begin{align*}
+    \log x + \log x^4 &= 10 \quad \text{(\framebox[2.5cm]{\phantom{Property}} Property)} \\
+    \log x^5 &= 10 \quad \text{(\framebox[2.5cm]{\phantom{Property}} Property, or definition of log if } x^5=10^{10}) \\
+    5 \log x &= 10 \quad \text{(\framebox[2.5cm]{\phantom{Property}} Property)} \\
+    \log x &= 2 \\
+    x &= 100
+\end{align*}
+(Students would typically drag/drop "Product", "Quotient", "Power" into the boxes. For the step \(\log x^5 = 10 \to 5 \log x = 10\), the property is Power. For \(\log x + \log x^4 = 10 \to \log x^5 = 10\), the property is Product.)
+
+\subsection*{Question 30}
+Function \(f\) is graphed below.
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    % Axes
+    \draw[->] (-4.5,0) -- (4.5,0) node[right] {$x$};
+    \draw[->] (0,-1) -- (0,24.5) node[above] {$y$};
+    % Ticks
+    \foreach \x in {-4,-2,2,4} \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+    \foreach \y in {4,8,12,16,20,24} \draw (0.1,\y) -- (-0.1,\y) node[left] {\y};
+    \node[below left, font=\tiny] at (0,0) {O};
+    % Points from image
+    \fill (-1,4/3) circle (2.5pt) node[above right, font=\tiny] {$(-1, 4/3)$}; % 4/3 = 1.33
+    \fill (0,4) circle (2.5pt) node[above right, font=\tiny] {$(0,4)$};
+    \fill (1,12) circle (2.5pt) node[above right, font=\tiny] {$(1,12)$};
+    % Curve (approximate exponential)
+    \draw[smooth, domain=-1.5:1.2, variable=\x, blue, thick] plot ({\x}, {4*(3^\x)});
+\end{tikzpicture}
+\end{center}
+Select all the functions with a greater growth factor than \(f\).
+\begin{enumerate}[label=\Alph*.]
+    \item[\XBox] \( a(x) = 3 \cdot 4^x \)
+    \item[\XBox] \( b(x) = 1.25^x \)
+    \item[\XBox] \( c(x) = \left(\frac{1}{12}\right) \cdot 12^x \)
+    \item[\XBox] \( d(x) = 12 \cdot \left(\frac{4}{3}\right)^x \)
+    \item[\XBox] \( e(x) = \left(\frac{9}{16}\right)^x \)
+\end{enumerate}
+(Note: Replace \XBox with \Square if you want empty boxes for students to fill)
+
+\subsection*{Question 31}
+Complete the following sentence to make a true statement about the expression \( 81^{\frac{1}{3}} \).
+\begin{itemize}
+    \item \( 81^{\frac{1}{3}} \) is equivalent to [\XBox] \( \sqrt[3]{81} \) [\XBox] \( 3 \) [\XBox] \( \sqrt{81^3} \) [\XBox] \( 2 \)
+    \item because [\XBox] \( 9 = \sqrt{81} \) [\XBox] \( (\sqrt[3]{81})^3 = 81 \) [\XBox] \( 9^2 = 81 \) [\XBox] \( \sqrt{81^3} = 1 \)
+\end{itemize}
+(Note: Replace \XBox with \Square if you want empty boxes for students to fill. The options here are presented as selectable items from the test image.)
+
+\subsection*{Question 33 (Relevant Parts A and B)}
+Two community activists plan to contact local residents to urge them to vote for their preferred candidate for county sheriff.
+
+\textbf{Part A} Lucía plans to contact 12 residents per day. Write a function that models the number of residents she contacts after \(x\) days.
+\( f(x) = \framebox[1.5cm]{\phantom{X}} x \)
+
+Caleb uses a different strategy. He contacts 4 people on the first day. Those people will then contact 4 people the next day. This pattern continues each day. Write a function that models the number of people contacted by both Lucía and Caleb after \(x\) days. (This refers to the total number of people newly reached by their combined efforts on day x, or cumulative. Given the scaffold, \(4^x\) is Caleb's contribution for newly contacted on day \(x\)).
+Let's assume the question implies \(g(x)\) is the total new contacts on day \(x\).
+\( g(x) = \framebox[1.5cm]{\phantom{X}} x + \framebox[1.5cm]{\phantom{X}}^{\text{\framebox[0.5cm]{\phantom{X}}}} \)
+(The assessment form shows: \(g(x) = \text{\underline{Space}} x + \text{\underline{Space}}^{\text{\underline{Space}}}\). Lucia's is \(12x\). Caleb's is \(4^x\). So \(g(x) = 12x + 4^x\).)
+
+\textbf{Part B} Past experience shows that only 35\% of people contacted will actually vote for their preferred candidate. Write a function that models the number of votes Lucía and Caleb can expect to gain for their candidate after \(x\) days.
+\( h(x) = \text{\framebox[1cm]{\phantom{X}}} ( \text{\framebox[1cm]{\phantom{X}}} x + \text{\framebox[1cm]{\phantom{X}}}^{\text{\framebox[0.5cm]{\phantom{X}}}} ) \)
+(This would be \(h(x) = 0.35(12x+4^x)\).)
+
+If Lucía and Caleb start contacting people 7 days before the election, how many additional votes does the model predict they will gain for their candidate? Round to the nearest whole number.
+\framebox[2cm]{\phantom{Number}}
+
+% Ending the document
+\end{document}

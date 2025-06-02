@@ -1,0 +1,224 @@
+\documentclass[12pt]{article}
+
+% Setting up page geometry
+\usepackage[margin=1in]{geometry}
+
+% Including packages for mathematical typesetting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Including package for enhanced enumeration
+\usepackage{enumitem}
+
+% Including package for better spacing and formatting
+\usepackage{parskip}
+
+% Setting up font: Latin Modern
+\usepackage{lmodern}
+
+% For check boxes
+\usepackage{wasysym} % For \Square and \XBox
+
+% For tables in Q9
+\usepackage{array}
+
+% Document begins
+\begin{document}
+
+% Creating title
+\begin{center}
+    \textbf{Algebra 2 Assessment Review: Polynomials}
+\end{center}
+
+This document provides revised scaffolded questions to help students prepare for questions 5, 9, 22, and 23 (Polynomials group) of the enVision Algebra 2 Progress Monitoring Assessment Form C. Each question includes scaffolded steps to build understanding from basic concepts to the level required by the assessment, with clear guidance for concept-naive students. This is followed by the original assessment questions.
+
+\section*{Scaffolded Review Questions}
+
+% Section for Question 5
+\subsection*{Scaffolded Question for Assessment Item 5: Finding Zeros of Polynomial Functions}
+The original question asks to select all \( x \)-values where the polynomial \( f(x) = x^4 - 2x^3 - 29x^2 + 30x \), modeling a pelican’s height, equals zero. The following questions build understanding of finding polynomial zeros.
+
+\begin{enumerate}[label=5.\arabic*]
+    \item \textbf{Understanding Zeros}: A zero of a function is an \( x \)-value where \( f(x) = 0 \), where the graph crosses the x-axis. Find the zeros of:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = x - 2 \): Set \( x - 2 = 0 \), zero at \( x = \underline{\hspace{1cm}} \)
+        \item \( f(x) = x^2 - 4 = (x - 2)(x + 2) \): Zeros at \( x = \underline{\hspace{1cm}} \), \( x = \underline{\hspace{1cm}} \)
+        \item What does a zero represent for a height function? \underline{\hspace{6cm}}
+    \end{enumerate}
+    \item \textbf{Factoring Polynomials}: Factor each polynomial and find zeros:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = x^2 + 3x = x(x + 3) \): Zeros at \( x = \underline{\hspace{1cm}} \), \( x = \underline{\hspace{1cm}} \)
+        \item \( f(x) = x^3 - 9x = x(x^2 - 9) = x(x - 3)(x + 3) \): Zeros at \( x = \underline{\hspace{1cm}} \), \( x = \underline{\hspace{1cm}} \), \( x = \underline{\hspace{1cm}} \)
+        \item If a factor appears twice (e.g., \( (x - 1)^2 \)), the zero has multiplicity 2, meaning the graph touches the x-axis. Why might multiplicity matter? \underline{\hspace{4cm}}
+    \end{enumerate}
+    \item \textbf{Contextual Zeros}: A ball’s height is modeled by \( h(t) = -16t^2 + 48t \). Find when it hits the ground (\( h(t) = 0 \)):
+    \begin{enumerate}[label=\alph*)]
+        \item Factor: \( -16t^2 + 48t = -16t(t - 3) = 0 \). Zeros at \( t = \underline{\hspace{1cm}} \), \( t = \underline{\hspace{1cm}} \)
+        \item Interpret: \( t = 0 \) is when the ball is \underline{\hspace{2cm}}; \( t = 3 \) is when it \underline{\hspace{2cm}}.
+        \item Why ignore negative times? \underline{\hspace{6cm}}
+    \end{enumerate}
+    \item \textbf{Testing Zeros}: For a polynomial \( f(x) = x^4 - x^3 - 8x^2 + 8x \), test if the following are zeros by substituting:
+    \begin{enumerate}[label=\alph*)]
+        \item \( x = -2 \): Compute \( f(-2) = \underline{\hspace{1cm}} \). Is it a zero? \underline{\hspace{1cm}}
+        \item \( x = 1 \): Compute \( f(1) = \underline{\hspace{1cm}} \). Is it a zero? \underline{\hspace{1cm}}
+        \item For the original \( f(x) = x^4 - 2x^3 - 29x^2 + 30x \), which of these are zeros: \( -6, -5, 0, 1, 4, 6 \)? Test two values (e.g., \( x = 0 \), \( x = 1 \)).
+            \\ \(f(0) = \underline{\hspace{1cm}}\) (Zero? \underline{\hspace{0.5cm}}) \quad \(f(1) = \underline{\hspace{1cm}}\) (Zero? \underline{\hspace{0.5cm}})
+            \\ Selected Zeros: \underline{\hspace{5cm}}
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 9
+\subsection*{Scaffolded Question for Assessment Item 9: Polynomial Long Division}
+The original question asks to divide \( x^3 - 4x^2 + 6x - 2 \) by \( x - 1 \) and complete the quotient. The following questions build understanding of polynomial division.
+
+\begin{enumerate}[label=9.\arabic*]
+    \item \textbf{Basic Polynomial Division}: Divide each term by the divisor, matching powers of \( x \):
+    \begin{enumerate}[label=\alph*)]
+        \item \( \frac{8x^3}{2x} = \underline{\hspace{1cm}} \)
+        \item \( \frac{10x^4 + 4x^2}{2x^2} = \frac{10x^4}{2x^2} + \frac{4x^2}{2x^2} = \underline{\hspace{1cm}} + \underline{\hspace{1cm}} \)
+        \item Why divide term by term? \underline{\hspace{6cm}}
+    \end{enumerate}
+    \item \textbf{Simple Long Division}: Divide \( x^2 + 4x + 3 \) by \( x + 1 \):
+    \begin{enumerate}[label=\alph*)]
+        \item \( x^2 \div x = \underline{\hspace{1cm}} \), multiply: \( x(x + 1) = \underline{\hspace{1.5cm}} \), subtract: \( (x^2 + 4x + 3) - (x^2 + x) = \underline{\hspace{1.5cm}} \)
+        \item Continue: \( 3x \div x = \underline{\hspace{1cm}} \), multiply, subtract to get remainder 0.
+        \item Result: \( x^2 + 4x + 3 = (x + 1)(\underline{\hspace{1.5cm}}) + \underline{\hspace{0.5cm}} \)
+    \end{enumerate}
+    \item \textbf{Synthetic Division}: Use synthetic division for \( x^2 + 5x + 6 \) by \( x - 2 \):
+    \begin{enumerate}[label=\alph*)]
+        \item Divisor \( x - 2 \), so use 2. Coefficients: 1, 5, 6. Setup: \\
+        \[
+        \begin{array}{c|ccc}
+        2 & 1 & 5 & 6 \\
+          &   & \underline{\hspace{0.5cm}} & \underline{\hspace{0.5cm}} \\
+        \hline
+          & \underline{\hspace{0.5cm}} & \underline{\hspace{0.5cm}} & \underline{\hspace{0.5cm}} \\
+        \end{array}
+        \]
+        \item Quotient: \underline{\hspace{1.5cm}}, Remainder: \underline{\hspace{0.5cm}}
+        \item Why is synthetic division faster for linear divisors? \underline{\hspace{4cm}}
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Divide \( x^3 - 4x^2 + 6x - 2 \) by \( x - 1 \) using synthetic division:
+    \begin{enumerate}[label=\alph*)]
+        \item Coefficients: \underline{\hspace{0.5cm}}, \underline{\hspace{0.5cm}}, \underline{\hspace{0.5cm}}, \underline{\hspace{0.5cm}}. Divisor: \( x - 1 \), so use \underline{\hspace{0.5cm}}.
+        \item Perform synthetic division: \\
+        \[
+        \begin{array}{c|cccc}
+        1 & 1 & -4 & 6 & -2 \\
+          &   & \underline{\hspace{0.5cm}} & \underline{\hspace{0.5cm}} & \underline{\hspace{0.5cm}} \\
+        \hline
+          & \underline{\hspace{0.5cm}} & \underline{\hspace{0.5cm}} & \underline{\hspace{0.5cm}} & \underline{\hspace{0.5cm}} \\
+        \end{array}
+        \]
+        \item Quotient: \underline{\hspace{2.5cm}}, Remainder: \underline{\hspace{0.5cm}}. Write as: \( x^3 - 4x^2 + 6x - 2 = (x - 1)(\underline{\hspace{2.5cm}}) + \underline{\hspace{0.5cm}} \).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 22
+\subsection*{Scaffolded Question for Assessment Item 22: Multiplying Polynomials}
+The original question asks to simplify \( (x^2 + 4x)(x^2 + x + 2) \). The following questions build understanding of polynomial multiplication.
+
+\begin{enumerate}[label=22.\arabic*]
+    \item \textbf{Monomial Distribution}: Multiply by distributing each term:
+    \begin{enumerate}[label=\alph*)]
+        \item \( x(x + 5) = x^2 + 5x \)
+        \item \( 3x(x^2 + 2) = \underline{\hspace{1.5cm}} + \underline{\hspace{1.5cm}} \)
+        \item Why distribute each term? \underline{\hspace{6cm}}
+    \end{enumerate}
+    \item \textbf{Binomial Multiplication}: Use FOIL:
+    \begin{enumerate}[label=\alph*)]
+        \item \( (x + 3)(x + 2) \): First: \( x^2 \), Outer: \( 3x \), Inner: \( 2x \), Last: 6. \\
+        Result: \( x^2 + 5x + 6 \)
+        \item \( (x - 1)(x + 4) \): \underline{\hspace{1cm}} + \underline{\hspace{1cm}} + \underline{\hspace{1cm}} + \underline{\hspace{1cm}} = \underline{\hspace{2.5cm}}.
+    \end{enumerate}
+    \item \textbf{Quadratic by Binomial}: Multiply:
+    \begin{enumerate}[label=\alph*)]
+        \item \( (x^2 + 1)(x + 3) = x^2(x + 3) + 1(x + 3) = x^3 + 3x^2 + x + 3 \)
+        \item \( (x^2 + 2x)(x + 1) = \underline{\hspace{1cm}} + \underline{\hspace{1cm}} + \underline{\hspace{1cm}} + \underline{\hspace{1cm}} = \underline{\hspace{2.5cm}} \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Multiply \( (x^2 + 4x)(x^2 + x + 2) \):
+    \begin{enumerate}[label=\alph*)]
+        \item Distribute: \( x^2(x^2 + x + 2) + 4x(x^2 + x + 2) \)
+        \item Compute: \( x^4 + x^3 + 2x^2 + 4x^3 + 4x^2 + 8x \)
+        \item Combine: \( x^4 + (1 + 4)x^3 + (2 + 4)x^2 + 8x = \underline{\hspace{3cm}} \). \\
+        Compare to choices: \( x^4 + 5x^3 + 6x^2 + 8x \).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 23
+\subsection*{Scaffolded Question for Assessment Item 23: Polynomial Function Behavior}
+The original question asks to analyze \( f(x) = x^3 + 3x^2 \), finding zeros and describing end behavior. The following questions build understanding of polynomial analysis.
+
+\begin{enumerate}[label=23.\arabic*]
+    \item \textbf{Finding Zeros}: Factor to find zeros:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = x(x - 4) \): Zeros: \( x = 0 \), \( x = 4 \)
+        \item \( f(x) = x^2(x + 2) \): Zeros: \( x = \underline{\hspace{1cm}} \) (multiplicity \underline{\hspace{0.5cm}}), \( x = \underline{\hspace{1cm}} \)
+        \item What does multiplicity mean graphically? \underline{\hspace{6cm}}
+    \end{enumerate}
+    \item \textbf{End Behavior}: End behavior depends on the leading term:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = 2x^3 \): As \( x \to -\infty \), \( f(x) \to -\infty \); as \( x \to +\infty \), \( f(x) \to +\infty \).
+        \item \( f(x) = -x^3 + x \): Leading term: \( -x^3 \). \\
+        As \( x \to -\infty \), \( f(x) \to \underline{\hspace{1cm}} \); as \( x \to +\infty \), \( f(x) \to \underline{\hspace{1cm}}.
+    \end{enumerate}
+    \item \textbf{Graphing Cubics}: For \( f(x) = x^3 - x^2 = x^2(x - 1) \):
+    \begin{enumerate}[label=\alph*)]
+        \item Zeros: \( x = 0 \) (multiplicity 2), \( x = 1 \)
+        \item Test points: \( f(-1) = (-1)^3 - (-1)^2 = -1 - 1 = -2 \); \( f(2) = 8 - 4 = 4 \).
+        \item Multiplicity 2 at \( x = 0 \): Graph \underline{\hspace{2cm}} the x-axis.
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: For \( f(x) = x^3 + 3x^2 \):
+    \begin{enumerate}[label=\alph*)]
+        \item Factor: \( f(x) = x^2(x + 3) \). Zeros: \underline{\hspace{1cm}}, \underline{\hspace{1cm}}.
+        \item End behavior: Leading term \( x^3 \). \\
+        As \( x \to -\infty \), \( f(x) \to \underline{\hspace{1cm}} \); as \( x \to +\infty \), \( f(x) \to \underline{\hspace{1cm}}.
+        \item At \( x = 0 \) (multiplicity 2): Graph \underline{\hspace{2cm}} the x-axis.
+    \end{enumerate}
+\end{enumerate}
+
+\section*{Original Assessment Questions}
+
+\subsection*{Question 5}
+The height above sea level of a pelican diving for fish is modeled by \( f(x) = x^4 - 2x^3 - 29x^2 + 30x \). Select all the x-values where the pelican enters or exits the water.
+\begin{enumerate}[label=\Alph*.]
+    \item[\XBox] -6 \qquad \qquad \text{D.} [\XBox] 1
+    \item[\XBox] -5 \qquad \qquad \text{E.} [\XBox] 4
+    \item[\XBox] 0 \qquad \qquad \text{F.} [\XBox] 6
+\end{enumerate}
+(Note: Replace \XBox with \Square if you want empty boxes for students to fill)
+
+\subsection*{Question 9}
+Divide \( x^3 - 4x^2 + 6x - 2 \) by \( x - 1 \). Complete the quotient using the choices provided.
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+3x & -5x & -3x & 3 \\
+\hline
+11 & -3 & \(\frac{9}{x-1}\) & \(\frac{1}{x-1}\) \\
+\hline
+\end{tabular}
+\end{center}
+\( x^2 + \) \framebox[1.5cm]{\phantom{x}} \( + \) \framebox[1.5cm]{\phantom{x}} \( + \) \framebox[2.5cm]{\phantom{x}}
+
+\subsection*{Question 22}
+Simplify \( (x^2 + 4x)(x^2 + x + 2) \).
+\begin{enumerate}[label=\Alph*.]
+    \item \( 8x^2 + 5x^3 + 8x \)
+    \item \( x^4 + 5x^3 + 6x^2 + 8x + 2 \)
+    \item \( x^4 + 5x^3 + 6x^2 + 8x \)
+    \item \( 4x^5 + 4x^4 + 8x^3 \)
+\end{enumerate}
+
+\subsection*{Question 23}
+Use a graph of the polynomial function \( f(x) = x^3 + 3x^2 \) to complete the following:
+\begin{itemize}
+    \item The zeros of \(f\) are \framebox[1cm]{\phantom{x}} and \framebox[1cm]{\phantom{x}}.
+    \item As \(x\) decreases, \(f(x)\) [\XBox] increases. [\XBox] decreases.
+    \item As \(x\) increases, \(f(x)\) [\XBox] increases. [\XBox] decreases.
+\end{itemize}
+(Note: Replace \XBox with \Square if you want empty boxes for students to fill)
+
+% Ending the document
+\end{document}

@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+
+% Setting up page geometry
+\usepackage[margin=1in]{geometry}
+
+% Including packages for mathematical typesetting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Including package for enhanced enumeration
+\usepackage{enumitem}
+
+% Including package for better spacing and formatting
+\usepackage{parskip}
+
+% Setting up font: Latin Modern
+\usepackage{lmodern}
+
+% For check boxes
+\usepackage{wasysym} % For \Square and \XBox
+
+% Document begins
+\begin{document}
+
+% Creating title
+\begin{center}
+    \textbf{Algebra 2 Assessment Review: Sequences}
+\end{center}
+
+This document provides revised scaffolded questions to help students prepare for question 18 (Sequences group) of the enVision Algebra 2 Progress Monitoring Assessment Form C. Each question includes scaffolded steps to build understanding from basic concepts to the level required by the assessment, with clear guidance for concept-naive students. This is followed by the original assessment questions.
+
+\section*{Scaffolded Review Questions}
+
+% Section for Question 18
+\subsection*{Scaffolded Question for Assessment Item 18: Arithmetic Sequences}
+The original question involves determining if the sequence (Monday: 240, Tuesday: 290, Friday: 440) is arithmetic and predicting Saturday’s attendance. The following questions build understanding of arithmetic sequences.
+
+\begin{enumerate}[label=18.\arabic*]
+    \item \textbf{Identifying Arithmetic Sequences}: A sequence is arithmetic if the differences between consecutive terms are constant (this constant difference is called the common difference, \(d\)):
+    \begin{enumerate}[label=\alph*)]
+        \item \( 4, 7, 10, 13, \ldots \)
+        Differences: \( 7 - 4 = 3 \), \( 10 - 7 = 3 \), \( 13 - 10 = 3 \).
+        Arithmetic? \underline{Yes}. Common difference: \( d = 3 \).
+        \item \( 8, 6, 4, 2, \ldots \)
+        Differences: \( 6 - 8 = \underline{-2} \), \( 4 - 6 = \underline{-2} \), \( 2 - 4 = \underline{-2} \).
+        Arithmetic? \underline{Yes}. Common difference: \( d = \underline{-2} \).
+        \item Why must differences be constant for an arithmetic sequence? \underline{That is the definition of an arithmetic sequence; it has a constant rate of change.}
+    \end{enumerate}
+    \item \textbf{Finding Common Differences from Context}: Given festival attendance:
+    \begin{enumerate}[label=\alph*)]
+        \item Monday = 200, Tuesday = 250: \( d = 250 - 200 = \underline{50} \)
+        \item Monday = 240, Tuesday = 290: \( d = 290 - 240 = \underline{50} \)
+        \item If Wednesday's attendance based on the trend from (b) is 340, check the difference: \( 340 - 290 = \underline{50} \). Is it consistent with the previous difference? \underline{Yes}.
+    \end{enumerate}
+    \item \textbf{Recursive Formulas}: For an arithmetic sequence, the recursive formula is \( a_n = a_{n-1} + d \), where \(a_1\) is the first term and \(a_n\) is the \(n\)-th term.
+    \begin{enumerate}[label=\alph*)]
+        \item Sequence: \( 5, 9, 13, 17, \ldots \)
+        First term: \( a_1 = 5 \). Common difference: \( d = 9-5 = 4 \).
+        Recursive Formula: \( a_1 = 5 \), \( a_n = a_{n-1} + 4 \) (for \(n > 1\)).
+        \item Sequence representing attendance: 240 (Monday), 290 (Tuesday), 340 (Wednesday, if arithmetic), ...
+        First term (Monday's attendance): \( a_1 = \underline{240} \).
+        Common difference (if arithmetic): \( d = \underline{50} \).
+        Recursive Formula: \( a_1 = \underline{240} \), \( a_n = a_{n-1} + \underline{50} \) (for \(n > 1\)).
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}:
+    Monday attendance (\(a_1\)) = 240.
+    Tuesday attendance (\(a_2\)) = 290.
+    Friday attendance (\(a_5\)) = 440. (Monday is day 1, Tuesday day 2, Wed day 3, Thurs day 4, Friday day 5)
+    \begin{enumerate}[label=\alph*)]
+        \item \textbf{Part A: Is it arithmetic? Check recursive formula.}
+        Calculate potential common difference from Monday to Tuesday: \( d = a_2 - a_1 = 290 - 240 = \underline{50} \).
+        If the sequence is arithmetic with \(d=50\):
+        Wednesday (\(a_3\)) = \(a_2 + d = 290 + 50 = 340 \).
+        Thursday (\(a_4\)) = \(a_3 + d = 340 + 50 = 390 \).
+        Friday (\(a_5\)) = \(a_4 + d = 390 + 50 = 440 \).
+        Does this calculated Friday attendance match the given Friday attendance (440)? \underline{Yes}.
+        So, is the sequence arithmetic? \underline{Yes}.
+        Recursive formula: \( a_1 = \underline{240} \), \( a_n = a_{n-1} + \underline{50} \) (for \(n>1\)). (This matches option C from the assessment).
+        \item \textbf{Part B: Predict Saturday's attendance.}
+        Saturday is the 6th day (\(a_6\)).
+        Using the recursive formula: \(a_6 = a_5 + d\).
+        \(a_6 = 440 + 50 = \underline{490} \) people.
+    \end{enumerate}
+\end{enumerate}
+
+\section*{Original Assessment Question}
+
+\subsection*{Question 18}
+The number of people attending a music festival has been increasing over the last several days. On Monday, 240 people attended. On Tuesday, 290 people attended. And on Friday, 440 people attended.
+
+\textbf{Part A} Is the sequence that represents the festival attendance arithmetic? If it is, choose the recursive formula for the sequence.
+\begin{enumerate}[label=\Alph*.]
+    \item No; the music festival attendance cannot be represented by an arithmetic sequence.
+    \item Yes; \( a(n) = 290 + n \)
+    \item Yes; \( a_1 = 240, a_n = a_{n-1} + 50 \)
+    \item Yes; \( a_1 = 240, a_n = a_{n+1} + 50 \)
+\end{enumerate}
+
+\textbf{Part B} If the trend continues, how many people will attend on Saturday?
+\[ \framebox[2cm]{\phantom{Number}} \text{ people} \]
+
+% Ending the document
+\end{document}

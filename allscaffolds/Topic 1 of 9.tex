@@ -1,0 +1,259 @@
+
+
+\documentclass[12pt]{article}
+
+% Setting up page geometry
+\usepackage[margin=1in]{geometry}
+
+% Including packages for mathematical typesetting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Including package for enhanced enumeration
+\usepackage{enumitem}
+
+% Including package for better spacing and formatting
+\usepackage{parskip}
+
+% Setting up font: Latin Modern
+\usepackage{lmodern}
+
+% For check boxes
+\usepackage{wasysym} % For \Square and \XBox
+\usepackage{tikz}    % For drawing the graph in Q1
+
+% Document begins
+\begin{document}
+
+% Creating title
+\begin{center}
+    \textbf{Algebra 2 Assessment Review: Functions \& Transformations}
+\end{center}
+
+This document provides revised scaffolded questions to help students prepare for questions 1, 2, 4, 11, and 12 (Functions & Transformations group) of the enVision Algebra 2 Progress Monitoring Assessment Form C. Each question includes scaffolded steps to build understanding from basic concepts to the level required by the assessment, with clear guidance for concept-naive students. This is followed by the original assessment questions.
+
+\section*{Scaffolded Review Questions}
+
+% Section for Question 1
+\subsection*{Scaffolded Question for Assessment Item 1: Function Transformations}
+The original question involves translating a graph of an absolute value function 3 units right and 5 units down to find the new equation. The following questions build understanding of transformations.
+
+\begin{enumerate}[label=1.\arabic*]
+    \item \textbf{Basic Vertex Shifts}: The graph of \( y = |x| \) has a vertex at \( (0, 0) \). A horizontal shift right by \( h \) units changes the equation to \( y = |x - h| \), and a vertical shift down by \( k \) units adds \( -k \). Find the vertex of each:
+    \begin{enumerate}[label=\alph*)]
+        \item \( y = |x - 4| \): Vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+        \item \( y = |x| - 3 \): Vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+        \item \( y = |x + 1| + 2 \): Vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+    \end{enumerate}
+    \item \textbf{Transformation Effects}: Match each transformation to its effect on the graph of \( y = f(x) \):
+    \begin{itemize}
+        \item \( f(x - h) \), \( h > 0 \): \underline{\hspace{3cm}} (A. Shifts right \( h \) units)
+        \item \( f(x) + k \), \( k > 0 \): \underline{\hspace{3cm}} (B. Shifts up \( k \) units)
+        \item \( -f(x) \): \underline{\hspace{3cm}} (C. Reflects over \( x \)-axis)
+        \item \( f(x + h) \), \( h > 0 \): \underline{\hspace{3cm}} (D. Shifts left \( h \) units)
+    \end{itemize}
+    \item \textbf{Combined Transformations}: Start with \( y = |x + 2| \), vertex at \( (-2, 0) \). Apply these transformations:
+    \begin{enumerate}[label=\alph*)]
+        \item Shift 1 unit right: New vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+        \item Then shift 4 units down: New vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+        \item Write the equation: Start with \( y = |x + 2| \). A right shift by 1 replaces \( x \) with \( (x - 1) \), and a down shift by 4 subtracts 4. New equation: \( y = \underline{\hspace{3cm}} \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Suppose the original graph is \( y = -|x - 2| + 3 \), with vertex at \( (2, 3) \). Translate it 3 units right and 5 units down:
+    \begin{enumerate}[label=\alph*)]
+        \item New vertex: Right 3 units adds 3 to \( x \)-coordinate; down 5 units subtracts 5 from \( y \)-coordinate. Vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+        \item New equation: Start with \( y = -|x - 2| + 3 \). Right 3 units replaces \( x - 2 \) with \( (x - 3) - 2 = x - 5 \); down 5 units subtracts 5 from the constant. New equation: \( y = \underline{\hspace{3cm}} \)
+        \item Compare to choices: \( y = -|x + 1| - 2 \), \( y = -|x + 1| + 2 \), \( y = -|x - 1| - 2 \), \( y = -|x - 1| + 2 \).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 2
+\subsection*{Scaffolded Question for Assessment Item 2: Vertical Asymptotes}
+The original question asks to identify functions with a vertical asymptote at \( x = 4 \). The following questions build understanding of asymptotes in logarithmic functions.
+
+\begin{enumerate}[label=2.\arabic*]
+    \item \textbf{Logarithm Domain}: The function \( \ln(x) \) is defined for \( x > 0 \), with a vertical asymptote at \( x = 0 \). Find the domain and asymptote for:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = \ln(x - 1) \): Domain \( x > \underline{\hspace{1cm}} \), asymptote at \( x = \underline{\hspace{1cm}} \)
+        \item \( f(x) = \ln(x + 3) \): Domain \( x > \underline{\hspace{1cm}} \), asymptote at \( x = \underline{\hspace{1cm}} \)
+    \end{enumerate}
+    \item \textbf{Transformed Logarithms}: For \( f(x) = \log(x - a) \), the asymptote is at \( x = a \). Determine the asymptote for:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = \log(x - 5) \): Asymptote at \( x = \underline{\hspace{1cm}} \)
+        \item \( f(x) = \log(x - 2) + 3 \): Asymptote at \( x = \underline{\hspace{1cm}} \)
+        \item Why does the \( +3 \) in part b not affect the asymptote? \underline{\hspace{6cm}}
+    \end{enumerate}
+    \item \textbf{Checking for \( x = 4 \)}: Determine if each function has a vertical asymptote at \( x = 4 \). Write the asymptote equation or “None.”
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = \ln(x - 4) \): \underline{\hspace{2cm}}
+        \item \( f(x) = \ln(x) + 4 \): \underline{\hspace{2cm}}
+        \item \( f(x) = 2 \ln(x - 4) \): \underline{\hspace{2cm}}
+        \item \( f(x) = \ln(x + 4) \): \underline{\hspace{2cm}}
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Select all functions with a vertical asymptote at \( x = 4 \). For each, find the argument of the logarithm (e.g., \( \ln(u) \)) and set \( u = 0 \) to find the asymptote:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = \log_4 x - 4 \): Asymptote at \underline{\hspace{2cm}}
+        \item \( f(x) = \ln(x - 4) \): Asymptote at \underline{\hspace{2cm}}
+        \item \( f(x) = \log(x - 4) + 4 \): Asymptote at \underline{\hspace{2cm}}
+        \item \( f(x) = 4 \ln x - 4 \): Asymptote at \underline{\hspace{2cm}}
+        \item \( f(x) = \log(x - 4) \): Asymptote at \underline{\hspace{2cm}}
+        \item Which have asymptote at \( x = 4 \)? \underline{\hspace{3cm}}
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 4
+\subsection*{Scaffolded Question for Assessment Item 4: Vertex Form and Transformations}
+The original question involves finding the vertex of \( g(x) = f(x - 3) - 2 \), given \( f(x) \) has vertex at \( (2, -4) \). The following questions build understanding of quadratic transformations.
+
+\begin{enumerate}[label=4.\arabic*]
+    \item \textbf{Vertex of Quadratics}: For a quadratic \( f(x) = a(x - h)^2 + k \), the vertex is \( (h, k) \). Find the vertex:
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(x) = (x - 1)^2 + 4 \): Vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+        \item \( f(x) = 2(x + 3)^2 - 2 \): Vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+    \end{enumerate}
+    \item \textbf{Horizontal Shifts}: If \( f(x) \) has vertex at \( (3, 1) \), find the vertex after:
+    \begin{enumerate}[label=\alph*)]
+        \item \( g(x) = f(x - 2) \): Shift right 2 units, vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+        \item \( h(x) = f(x + 1) \): Shift left 1 unit, vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+    \end{enumerate}
+    \item \textbf{Combined Shifts}: If \( f(x) \) has vertex at \( (1, 2) \), find the vertex of:
+    \begin{enumerate}[label=\alph*)]
+        \item \( g(x) = f(x - 1) + 3 \): Shift right 1 unit, up 3 units, vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+        \item \( h(x) = f(x + 2) - 1 \): Shift left 2 units, down 1 unit, vertex at \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: Given \( f(x) \) has vertex at \( (2, -4) \), find the vertex of \( g(x) = f(x - 3) - 2 \):
+    \begin{enumerate}[label=\alph*)]
+        \item Horizontal shift: \( x - 3 \) shifts \underline{\hspace{1cm}} units \underline{\hspace{1cm}}
+        \item Vertical shift: \( -2 \) shifts \underline{\hspace{1cm}} units \underline{\hspace{1cm}}
+        \item New vertex: \( (\underline{\hspace{1cm}}, \underline{\hspace{1cm}}) \)
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 11
+\subsection*{Scaffolded Question for Assessment Item 11: Inverse Functions}
+The original question asks for the inverse of \( f(x) = \sqrt{x - 10} \), representing years as a function of profits. The following questions build understanding of inverse functions.
+
+\begin{enumerate}[label=11.\arabic*]
+    \item \textbf{Inverse Function Basics}: If \( f(a) = b \), then \( f^{-1}(b) = a \). The inverse swaps \( x \) and \( y \)-coordinates:
+    \begin{enumerate}[label=\alph*)]
+        \item If \( f(4) = 9 \), then \( f^{-1}(9) = \underline{\hspace{1cm}} \)
+        \item If \( f^{-1}(2) = 5 \), then \( f(5) = \underline{\hspace{1cm}} \)
+        \item Why swap \( x \) and \( y \)? \underline{\hspace{6cm}}
+    \end{enumerate}
+    \item \textbf{Linear Inverses}: Find the inverse of \( f(x) = 2x + 3 \):
+    \begin{enumerate}[label=\alph*)]
+        \item Set \( y = 2x + 3 \), switch: \( x = 2y + 3 \)
+        \item Solve: \( x - 3 = 2y \), so \( y = \underline{\hspace{2cm}} \)
+        \item Inverse: \( f^{-1}(x) = \underline{\hspace{2cm}} \)
+    \end{enumerate}
+    \item \textbf{Square Root Inverses}: Find the inverse of \( f(x) = \sqrt{x - 4} \), \( x \geq 4 \):
+    \begin{enumerate}[label=\alph*)]
+        \item Set \( y = \sqrt{x - 4} \), switch: \( x = \sqrt{y - 4} \)
+        \item Solve: Square both sides: \( x^2 = y - 4 \), so \( y = \underline{\hspace{2cm}} \)
+        \item Inverse: \( f^{-1}(x) = x^2 + 4 \), for \( x \geq 0 \) (since \( y \geq 0 \)). Why the restriction? \underline{\hspace{4cm}}
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: For \( f(x) = \sqrt{x - 10} \), representing profit after \( x \) years:
+    \begin{enumerate}[label=\alph*)]
+        \item Find inverse: Set \( y = \sqrt{x - 10} \), switch: \( x = \sqrt{y - 10} \), solve: \( y = \underline{\hspace{2cm}} \)
+        \item Inverse: \( f^{-1}(x) = \underline{\hspace{2cm}} \), for \( x \geq 0 \). What does \( f^{-1}(x) \) represent? \underline{\hspace{4cm}}
+        \item Compare to choices: \( (x - 10)^2 \), \( x^2 + 10 \), with domains \( x \geq 0 \) or \( x \geq -10 \).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 12
+\subsection*{Scaffolded Question for Assessment Item 12: Average Rate of Change}
+The original question asks for the average rate of change of \( f(x) = -2x^2 + 5 \) over \( -3.5 \leq x \leq 0 \). The following questions build understanding of average rate of change.
+
+\begin{enumerate}[label=12.\arabic*]
+    \item \textbf{Basic Average Rate of Change}: The average rate of change is the slope of the secant line: \( \frac{f(b) - f(a)}{b - a} \). For \( f(x) = 3x + 1 \), find from \( x = 1 \) to \( x = 3 \):
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(1) = \underline{\hspace{1cm}} \), \( f(3) = \underline{\hspace{1cm}} \)
+        \item Rate: \( \frac{f(3) - f(1)}{3 - 1} = \underline{\hspace{1cm}} \)
+    \end{enumerate}
+    \item \textbf{Quadratic Functions}: For \( f(x) = -x^2 + 2 \), find from \( x = -1 \) to \( x = 1 \):
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(-1) = \underline{\hspace{1cm}} \), \( f(1) = \underline{\hspace{1cm}} \)
+        \item Rate: \( \frac{f(1) - f(-1)}{1 - (-1)} = \underline{\hspace{1cm}} \)
+    \end{enumerate}
+    \item \textbf{Negative and Decimal Intervals}: For \( f(x) = -x^2 + 4 \), find from \( x = -2.5 \) to \( x = 0 \):
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(-2.5) = -(-2.5)^2 + 4 = \underline{\hspace{1cm}} \)
+        \item \( f(0) = \underline{\hspace{1cm}} \)
+        \item Rate: \( \frac{f(0) - f(-2.5)}{0 - (-2.5)} = \underline{\hspace{1cm}} \)
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}: For \( f(x) = -2x^2 + 5 \), find from \( x = -3.5 \) to \( x = 0 \):
+    \begin{enumerate}[label=\alph*)]
+        \item \( f(-3.5) = -2(-3.5)^2 + 5 = \underline{\hspace{1cm}} \)
+        \item \( f(0) = \underline{\hspace{1cm}} \)
+        \item Rate: \( \frac{f(0) - f(-3.5)}{0 - (-3.5)} = \underline{\hspace{1cm}} \). Compare to choices: 19.5, 7, -7, -19.5.
+    \end{enumerate}
+\end{enumerate}
+
+
+\section*{Original Assessment Questions}
+
+\subsection*{Question 1}
+The graph below is translated 3 units right, and 5 units down. What is the equation of the new graph?
+
+\begin{center}
+\begin{tikzpicture}[scale=0.55]
+    \draw[->] (-4.5,0) -- (5.5,0) node[right] {$x$};
+    \draw[->] (0,-4.5) -- (0,4.5) node[above] {$y$};
+    \foreach \x/\xtext in {-4,-2,2,4} \draw (\x, -0.1) -- (\x, 0.1) node[below=2pt] {$\xtext$};
+    \foreach \y/\ytext in {-4,-2,2,4} \draw (-0.1,\y) -- (0.1,\y) node[left=2pt] {$\ytext$};
+    \node[below left, font=\small] at (0,0) {O};
+    % Graph y = -|x-2|+3
+    \draw[thick, blue] (-1,0) -- (2,3) -- (5,0);
+    \fill (2,3) circle (2.5pt); % Vertex
+    \fill (0,1) circle (2.5pt); % Point
+    \fill (4,1) circle (2.5pt); % Point
+    \fill (-1,0) circle (2.5pt); % Point
+    \fill (5,0) circle (2.5pt); % Point
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[label=\Alph*.]
+    \item \( y = -|x + 1| + 2 \)
+    \item \( y = -|x + 1| - 2 \)
+    \item \( y = -|x - 1| - 2 \)
+    \item \( y = -|x - 1| + 2 \)
+\end{enumerate}
+
+\subsection*{Question 2}
+Select all functions whose graph has a vertical asymptote at \( x = 4 \).
+\begin{enumerate}[label=\Alph*.]
+    \item[\XBox] \( f(x) = \log_4 x - 4 \) 
+    \item[\XBox] \( f(x) = \ln (x - 4) \)
+    \item[\XBox] \( f(x) = \log (x - 4) + 4 \)
+    \item[\XBox] \( f(x) = 4 \ln x - 4 \)
+    \item[\XBox] \( f(x) = \log (x - 4) \)
+\end{enumerate}
+(Note: Replace \XBox with \Square if you want empty boxes for students to fill)
+
+\subsection*{Question 4}
+The graph of a quadratic function \(f(x)\) has a vertex at \( (2, -4) \). What is the vertex of \(g(x)\) if \( g(x) = f(x - 3) - 2 \)?
+\begin{center}
+( \underline{\hspace{1.5cm}} , \underline{\hspace{1.5cm}} )
+\end{center}
+
+\subsection*{Question 11}
+The function \( f(x) = \sqrt{x-10} \) represents the profits of a company after \(x\) years in business. Which function represents the number of years as a function of the profits?
+\begin{enumerate}[label=\Alph*.]
+    \item \( f^{-1}(x) = (x - 10)^2 \), for \( x \geq 0 \)
+    \item \( f^{-1}(x) = (x - 10)^2 \), for \( x \geq -10 \)
+    \item \( f^{-1}(x) = x^2 + 10 \), for \( x \geq 0 \)
+    \item \( f^{-1}(x) = x^2 + 10 \), for \( x \geq -10 \)
+\end{enumerate}
+(Note: The original test image shows \(f(x)=\sqrt{x}-10\). The scaffold and options align better with \(f(x)=\sqrt{x-10}\), which is used here.)
+
+\subsection*{Question 12}
+What is the average rate of change for the function \( f(x) = -2x^2 + 5 \) over the interval \( -3.5 \leq x \leq 0 \)?
+\begin{enumerate}[label=\Alph*.]
+    \item 19.5
+    \item 7
+    \item -7
+    \item -19.5
+\end{enumerate}
+
+% Ending the document
+\end{document}

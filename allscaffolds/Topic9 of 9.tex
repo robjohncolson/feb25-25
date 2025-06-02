@@ -1,0 +1,254 @@
+\documentclass[12pt]{article}
+
+% Setting up page geometry
+\usepackage[margin=1in]{geometry}
+
+% Including packages for mathematical typesetting
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Including package for enhanced enumeration
+\usepackage{enumitem}
+
+% Including package for better spacing and formatting
+\usepackage{parskip}
+
+% Setting up font: Latin Modern
+\usepackage{lmodern}
+
+% For check boxes
+\usepackage{wasysym} % For \Square and \XBox
+
+% For tables
+\usepackage{array}
+
+% Document begins
+\begin{document}
+
+% Creating title
+\begin{center}
+    \textbf{Algebra 2 Assessment Review: Probability \& Statistics}
+\end{center}
+
+This document provides revised scaffolded questions to help students prepare for questions 28, 36, 37, and 38 (Probability \& Statistics group) of the enVision Algebra 2 Progress Monitoring Assessment Form C. Each question includes scaffolded steps to build understanding from basic concepts to the level required by the assessment, with clear guidance for concept-naive students. This is followed by the original assessment questions.
+
+\section*{Scaffolded Review Questions}
+
+% Section for Question 28
+\subsection*{Scaffolded Question for Assessment Item 28: Statistics Terminology}
+The original question asks whether 45 (average points for the first 3 games) is a variable, parameter, sample, or statistic, given a season average of 42. The following questions build understanding of statistical terms.
+
+\begin{enumerate}[label=28.\arabic*]
+    \item \textbf{Population vs. Sample}:
+    A \textbf{population} is the entire group of individuals or items that we are interested in studying.
+    A \textbf{sample} is a subset of the population that is selected for study.
+    \begin{enumerate}[label=\alph*)]
+        \item Identify population and sample:
+        Population: All basketball games in a season.
+        Sample: The first 5 games of the season.
+        \item Your example:
+        Population: All students in a particular high school.
+        Sample: \underline{All 10th-grade students in that high school (or, 50 randomly selected students from the school, etc.)}.
+    \end{enumerate}
+    \item \textbf{Parameter vs. Statistic}:
+    A \textbf{parameter} is a numerical measure that describes a characteristic of the entire \textit{population}.
+    A \textbf{statistic} is a numerical measure that describes a characteristic of a \textit{sample}.
+    (Hint: \textbf{P}arameter for \textbf{P}opulation; \textbf{S}tatistic for \textbf{S}ample)
+    \begin{enumerate}[label=\alph*)]
+        \item Average score of all games played by a team in a season: 50 points. (This describes all games - the population). This is a \underline{parameter}.
+        Average score of a sample of 10 games played by the team: 52 points. (This describes a sample). This is a \underline{statistic}.
+        \item Average height of all students in a university: 5’6”. This is a \underline{parameter}.
+        Average height of a sample of 30 students from that university: 5’7”. This is a \underline{statistic}.
+    \end{enumerate}
+    \item \textbf{Identifying Terms in Context}: Classify the given numbers:
+    \begin{enumerate}[label=\alph*)]
+        \item A town's mayor wants to know the average income of all households in the town. The true average income of all 2,500 households is \$55,000. This \$55,000 is a \underline{parameter}.
+        The mayor surveys 100 households and finds their average income is \$52,000. This \$52,000 is a \underline{statistic}.
+        \item A basketball coach calculates the average points scored by the team in the first 3 games of the season as 55 points. This 55 points is a \underline{statistic} (since it's based on a sample of games, not all games).
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}:
+    A high school basketball team had a season average of 42 points per game (this describes the entire season's games - the population of games for that season).
+    For the first 3 games of the season (this is a sample of games), they averaged 45 points per game.
+    \begin{enumerate}[label=\alph*)]
+        \item Population: \underline{All games played by the team in that season}.
+        Sample: \underline{The first 3 games of that season}.
+        \item The value 42 (season average) describes the \underline{population}, so it is a \underline{parameter}.
+        The value 45 (average of first 3 games) describes the \underline{sample}, so it is a \underline{statistic}.
+        \item Practice: A company wants to know the average age of its 3000 employees. The true average age is 38 years. A researcher selects 100 employees and finds their average age is 37.5 years.
+        The 37.5 years is a \underline{statistic}.
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Question 36
+\subsection*{Scaffolded Question for Assessment Item 36: Set Operations and Probability}
+The original question asks whether the winning outcomes (odd number or 6) are the union, intersection, or complement of \( A = \{1, 2, 3, 5, 6\} \) and \( B = \{1, 3, 4, 5, 6\} \) when rolling a number cube. (The sample space for a number cube is \(S = \{1, 2, 3, 4, 5, 6\}\)).
+
+\begin{enumerate}[label=36.\arabic*]
+    \item \textbf{Set Operations Review}:
+    Let \( U = \{1, 2, 3, 4, 5, 6\} \) be the universal set.
+    Let \( A = \{1, 3, 5\} \) (set of odd numbers).
+    Let \( B = \{2, 4, 6\} \) (set of even numbers).
+    Let \( C = \{4, 5, 6\} \).
+    \begin{enumerate}[label=\alph*)]
+        \item Union (\(\cup\)): \( A \cup C = \{x \mid x \in A \text{ OR } x \in C \text{ (or both)}\} = \{1, 3, 5\} \cup \{4, 5, 6\} = \underline{\{1, 3, 4, 5, 6\}} \).
+        \item Intersection (\(\cap\)): \( A \cap C = \{x \mid x \in A \text{ AND } x \in C\} = \{1, 3, 5\} \cap \{4, 5, 6\} = \underline{\{5\}} \).
+        \item Complement (\(A^c\) or \(A'\)): \( A^c = \{x \in U \mid x \notin A\} = \{1, 2, 3, 4, 5, 6\} - \{1, 3, 5\} = \underline{\{2, 4, 6\}} = B \).
+        \item Why use union in probability for "OR" events? \underline{Union includes all outcomes that satisfy one event, the other event, or both, which is the meaning of "OR".}
+    \end{enumerate}
+    \item \textbf{Probability Context - "OR"}:
+    A standard six-sided die is rolled. You win if you roll a 1 OR a 2.
+    Let event \(E_1\) be rolling a 1: \( E_1 = \{1\} \).
+    Let event \(E_2\) be rolling a 2: \( E_2 = \{2\} \).
+    \begin{enumerate}[label=\alph*)]
+        \item The set of winning outcomes is \( E_1 \cup E_2 = \{1\} \cup \{2\} = \underline{\{1, 2\}} \).
+        \item If you win on an "odd number OR a multiple of 3":
+        Odd numbers: \(O = \{1, 3, 5\}\). Multiples of 3: \(M_3 = \{3, 6\}\).
+        Winning outcomes = \( O \cup M_3 = \{1, 3, 5\} \cup \{3, 6\} = \underline{\{1, 3, 5, 6\}} \).
+    \end{enumerate}
+    \item \textbf{Analyzing Specific Sets for "OR" Events}:
+    Given Set \(X = \{1, 3, 5\}\) and Set \(Y = \{1, 2, 5\}\).
+    \begin{enumerate}[label=\alph*)]
+        \item Union: \( X \cup Y = \{1, 3, 5\} \cup \{1, 2, 5\} = \underline{\{1, 2, 3, 5\}} \).
+        \item Intersection: \( X \cap Y = \{1, 3, 5\} \cap \{1, 2, 5\} = \underline{\{1, 5\}} \).
+        \item Practice: If a game is won by an outcome in set X OR an outcome in set Y, which operation represents the winning outcomes? \underline{Union (\(\cup\))}.
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problem}:
+    Winning outcomes for Milianna: "an odd number OR 6".
+    Let \(S = \{1, 2, 3, 4, 5, 6\}\) be the sample space for rolling a number cube.
+    Set of odd numbers: \(O = \{1, 3, 5\}\).
+    Set containing 6: \(S_6 = \{6\}\).
+    \begin{enumerate}[label=\alph*)]
+        \item The set of Milianna's winning outcomes is \( W = O \cup S_6 = \{1, 3, 5\} \cup \{6\} = \underline{\{1, 3, 5, 6\}} \).
+        \item The question provides two sets: \( G_1 = \{1, 2, 3, 5, 6\} \) and \( G_2 = \{1, 3, 4, 5, 6\} \).
+        We need to determine if Milianna's winning set \(W = \{1, 3, 5, 6\}\) is the union, intersection, or complement of \(G_1\) and \(G_2\).
+        \item Calculate \(G_1 \cup G_2\): \(\{1, 2, 3, 5, 6\} \cup \{1, 3, 4, 5, 6\} = \{1, 2, 3, 4, 5, 6\}\). Is this \(W\)? \underline{No}.
+        \item Calculate \(G_1 \cap G_2\): \(\{1, 2, 3, 5, 6\} \cap \{1, 3, 4, 5, 6\} = \underline{\{1, 3, 5, 6\}}\). Is this \(W\)? \underline{Yes}.
+        \item (Complement usually needs a universal set defined by the problem context. If \(U = \{1,2,3,4,5,6\}\), \(G_1^c = \{4\}\), \(G_2^c = \{2\}\). Neither is \(W\).)
+        \item Answer: Milianna's winning outcomes \(W=\{1,3,5,6\}\) are the \underline{intersection} of \(G_1\) and \(G_2\).
+    \end{enumerate}
+\end{enumerate}
+
+% Section for Questions 37-38
+\subsection*{Scaffolded Question for Assessment Items 37-38: Conditional Probability and Data Analysis}
+The original questions involve calculating P(heavy metal | 12th grade) and comparing P(10th grade | rock) vs. P(rock | 10th grade) using a two-way table. The following questions build understanding of conditional probability.
+
+\begin{center}
+\textbf{Music Preference Data}
+\begin{tabular}{l|ccc|c}
+    & Rock & Hip-Hop & Heavy Metal & Total \\
+    \hline
+    10th Grade & 16 & 12 & 4 & 32 \\
+    11th Grade & 18 & 10 & 12 & 40 \\
+    12th Grade & 16 & 8 & 6 & 30 \\
+    \hline
+    Total & 50 & 30 & 22 & 102 \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[label=37-38.\arabic*]
+    \item \textbf{Reading Two-Way Tables}:
+    \begin{enumerate}[label=\alph*)]
+        \item How many 11th graders prefer hip-hop? Look at the intersection of "11th Grade" row and "Hip-Hop" column: \underline{10}.
+        \item What is the total number of 10th graders surveyed? Look at the total for the "10th Grade" row: \underline{32}.
+        \item What is the total number of students who prefer Rock? \underline{50}.
+        \item What is the grand total of students surveyed? \underline{102}.
+        \item Why are totals important in probability? \underline{They often serve as the denominator (sample space size) for calculating probabilities.}
+    \end{enumerate}
+    \item \textbf{Basic Probability from a Table}: \( P(\text{Event}) = \frac{\text{Number of favorable outcomes for Event}}{\text{Total number of outcomes}} \).
+    \begin{enumerate}[label=\alph*)]
+        \item Probability a randomly selected student is in 11th grade: \( P(\text{11th grade}) = \frac{\text{Total 11th graders}}{\text{Grand Total}} = \frac{40}{102} = \underline{\frac{20}{51}} \).
+        \item Probability a randomly selected student prefers Heavy Metal: \( P(\text{Heavy Metal}) = \frac{\text{Total Heavy Metal}}{\text{Grand Total}} = \frac{22}{102} = \underline{\frac{11}{51}} \).
+    \end{enumerate}
+    \item \textbf{Conditional Probability \( P(A|B) \)}: The probability of event A occurring GIVEN that event B has already occurred.
+    Formula: \( P(A|B) = \frac{P(A \text{ and } B)}{P(B)} = \frac{\text{Number of outcomes in both A and B}}{\text{Number of outcomes in B}} \).
+    When using a table, the condition B restricts our "new" sample space to only those outcomes in B.
+    \begin{enumerate}[label=\alph*)]
+        \item P(prefers Hip-Hop | student is in 10th grade):
+        Our sample space is now only the 10th graders (Total = 32).
+        Out of these 10th graders, how many prefer Hip-Hop? 12.
+        So, \( P(\text{Hip-Hop } | \text{ 10th grade}) = \frac{12}{32} = \underline{\frac{3}{8}} \).
+        \item P(is in 10th grade | student prefers Hip-Hop):
+        Our sample space is now only students who prefer Hip-Hop (Total = 30).
+        Out of these Hip-Hop preferrers, how many are in 10th grade? 12.
+        So, \( P(\text{10th grade } | \text{ Hip-Hop}) = \frac{12}{30} = \underline{\frac{2}{5}} \).
+        \item Compare \( P(\text{Hip-Hop } | \text{ 10th grade}) = \frac{3}{8} = 0.375 \) and \( P(\text{10th grade } | \text{ Hip-Hop}) = \frac{2}{5} = 0.4 \).
+        Is \(P(A|B)\) generally equal to \(P(B|A)\)? \underline{No}.
+    \end{enumerate}
+    \item \textbf{Applying to the Original Problems}:
+    \begin{enumerate}[label=\alph*)]
+        \item \textbf{Question 37}: What is the probability that a randomly selected 12th grade student at the school favors heavy metal? This is \( P(\text{Heavy Metal } | \text{ 12th grade}) \).
+        Condition: Student is in 12th grade. Total 12th graders = \underline{30}. (This is our new denominator).
+        Out of these 12th graders, how many favor Heavy Metal? \underline{6}.
+        \( P(\text{Heavy Metal } | \text{ 12th grade}) = \frac{6}{30} = \frac{1}{5} = 0.20 \).
+        As a percentage: \( 0.20 \times 100\% = \underline{20\%} \).
+        \item \textbf{Question 38}: Compare \(P(\text{10th grade } | \text{ Rock})\) and \(P(\text{Rock } | \text{ 10th grade})\).
+        Calculate \(P(\text{10th grade } | \text{ Rock})\):
+        Condition: Student chose Rock. Total Rock preferrers = \underline{50}.
+        Number of 10th graders who chose Rock = \underline{16}.
+        \(P(\text{10th grade } | \text{ Rock}) = \frac{16}{50} = \frac{8}{25} = \underline{0.32}\).
+
+        Calculate \(P(\text{Rock } | \text{ 10th grade})\):
+        Condition: Student is in 10th grade. Total 10th graders = \underline{32}.
+        Number of 10th graders who chose Rock = \underline{16}.
+        \(P(\text{Rock } | \text{ 10th grade}) = \frac{16}{32} = \frac{1}{2} = \underline{0.5}\).
+
+        Compare: \(0.32\) versus \(0.5\).
+        Since \(0.32 < 0.5\), then \(P(\text{10th grade } | \text{ Rock})\) is \underline{less than} \(P(\text{Rock } | \text{ 10th grade})\).
+    \end{enumerate}
+\end{enumerate}
+
+\section*{Original Assessment Questions}
+
+\subsection*{Question 28}
+A high school basketball team had a season average of 42 points per game. For the first 3 games of the season, they averaged 45 points per game. Which word best describes the number 45?
+\begin{enumerate}[label=\Alph*.]
+    \item variable
+    \item sample
+    \item parameter
+    \item statistic
+\end{enumerate}
+
+\subsection*{Question 36}
+Milianna rolls a number cube and will win a game with an outcome of an odd number or 6. Complete the statement.
+The winning outcomes are the
+\begin{itemize}
+    \item [\XBox] union
+    \item [\XBox] intersection
+    \item [\XBox] complement
+    \item [\XBox] event
+\end{itemize}
+of \( \{1, 2, 3, 5, 6\} \) and \( \{1, 3, 4, 5, 6\} \).
+(Note: Replace \XBox with \Square if you want empty boxes for students to fill)
+
+\subsection*{Use the data in Items 37 and 38.}
+The data show the favorite music of a random sample of students.
+\begin{center}
+\begin{tabular}{l|ccc|c}
+    & Rock & Hip-Hop & Heavy Metal & Total \\
+    \hline
+    10th Grade & 16 & 12 & 4 & 32 \\
+    11th Grade & 18 & 10 & 12 & 40 \\
+    12th Grade & 16 & 8 & 6 & 30 \\
+    \hline
+    Total & 50 & 30 & 22 & 102 \\
+\end{tabular}
+\end{center}
+
+\subsection*{Question 37}
+What is the probability that a randomly selected 12th grade student at the school favors heavy metal?
+\[ \framebox[2cm]{\phantom{Number}} \% \]
+
+\subsection*{Question 38}
+Complete the following to make a true statement.
+The probability of randomly selecting a 10th grade student given the student chose rock is
+\begin{itemize}
+    \item [\XBox] greater than
+    \item [\XBox] less than
+    \item [\XBox] equal to
+\end{itemize}
+selecting a student who chose rock given the student is in 10th grade.
+(Note: Replace \XBox with \Square if you want empty boxes for students to fill)
+
+% Ending the document
+\end{document}
